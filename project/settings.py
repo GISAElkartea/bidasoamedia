@@ -121,8 +121,7 @@ ADMINFILES_FLICKR_API_KEY = ''
 ADMINFILES_MEDIA_URL = ''
 
 
-#MARKITUP_FILTER = ('project.utils.markup_filter', {'safe_mode': True})
-MARKITUP_FILTER = ('markdown.markdown', {'safe_mode': True})
+MARKITUP_FILTER = ('project.utils.markup_filter', {'safe_mode': True})
 
 SASS = os.path.join(os.path.dirname(DIR), 'bin/sass')
 COMPRESS_PRECOMPILERS = (
