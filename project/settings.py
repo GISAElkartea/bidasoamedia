@@ -84,6 +84,7 @@ INSTALLED_APPS = (
     'oembed',
     'markitup',
     'compressor',
+    'sorl.thumbnail',
     
     'project',
     'project.articles',
@@ -117,6 +118,7 @@ ADMINFILES_YOUTUBE_USER = ''
 ADMINFILES_VIMEO_USER = ''
 ADMINFILES_FLICKR_USER = ''
 ADMINFILES_FLICKR_API_KEY = ''
+ADMINFILES_MEDIA_URL = ''
 
 
 #MARKITUP_FILTER = ('project.utils.markup_filter', {'safe_mode': True})
