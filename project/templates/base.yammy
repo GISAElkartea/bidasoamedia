@@ -1,0 +1,19 @@
+{% load static %}
+
+html
+    head
+        title {% block title %}{% endblock title %}
+        link
+            - rel stylesheet
+            - type text/css
+            - href {% static 'css/main.css' %}
+        script
+            - type text/javascript
+            - src {% static 'js/jquery.min.js' %}
+        script
+            - type text/javascript
+            - src {% static 'js/jquery.jfeed.js' %}
+        {% block extra_headers %}{% endblock extra_headers %}
+
+    body
+        {% block content %}{% endblock content %}
