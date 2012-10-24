@@ -119,7 +119,7 @@ JQUERY_URL = 'js/jquery.min.js'
 #ADMINFILES_FLICKR_API_KEY = ''
 
 
-MARKITUP_FILTER = ('project.utils.markup_filter', {'safe_mode': True})
+MARKITUP_FILTER = ('project.utils.markup_filter', {})
 MARKITUP_SET = 'markitup/sets/markdown'
 MARKITUP_SKIN = 'markitup/skins/markitup'
 MARKITUP_AUTO_PREVIEW = True
