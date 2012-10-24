@@ -7,7 +7,9 @@ from django.conf.urls.static import static
 from django.contrib import admin
 admin.autodiscover()
 
+
 urlpatterns = patterns('',
+        url('^', include('project.articles.urls', namespace='articles')),
         url(r'^grappelli', include('grappelli.urls')),
         url(r'^admin/', include(admin.site.urls)),
         url(r'^adminfiles/', include('adminfiles.urls')),
