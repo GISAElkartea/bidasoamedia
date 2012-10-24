@@ -78,6 +78,9 @@ INSTALLED_APPS = (
     'django.contrib.sitemaps',
     'django.contrib.admin',
     'django.contrib.comments',
+
+    'adminfiles',
+    'oembed',
 )
 
 LOGGING = {
@@ -99,3 +102,6 @@ LOGGING = {
 }
 
 X_FRAME_OPTIONS = 'DENY'
+
+THUMBNAIL_EXTENSION = 'png'
+JQUERY_URL = 'js/jquery.min.js'
