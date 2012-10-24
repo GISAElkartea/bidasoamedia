@@ -81,6 +81,7 @@ INSTALLED_APPS = (
 
     'adminfiles',
     'oembed',
+    'markitup',
 )
 
 LOGGING = {
@@ -111,3 +112,6 @@ ADMINFILES_YOUTUBE_USER = ''
 ADMINFILES_VIMEO_USER = ''
 ADMINFILES_FLICKR_USER = ''
 ADMINFILES_FLICKR_API_KEY = ''
+
+
+MARKITUP_FILTER = ('project.utils.markup_filter', {})
