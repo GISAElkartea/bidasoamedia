@@ -114,14 +114,17 @@ THUMBNAIL_EXTENSION = 'png'
 JQUERY_URL = 'js/jquery.min.js'
 
 
-ADMINFILES_YOUTUBE_USER = ''
-ADMINFILES_VIMEO_USER = ''
-ADMINFILES_FLICKR_USER = ''
-ADMINFILES_FLICKR_API_KEY = ''
+#ADMINFILES_YOUTUBE_USER = ''
+#ADMINFILES_VIMEO_USER = ''
+#ADMINFILES_FLICKR_USER = ''
+#ADMINFILES_FLICKR_API_KEY = ''
 ADMINFILES_MEDIA_URL = ''
 
 
 MARKITUP_FILTER = ('project.utils.markup_filter', {'safe_mode': True})
+MARKITUP_SET = 'markitup/sets/markdown'
+MARKITUP_SKIN = 'markitup/skins/markitup'
+MARKITUP_AUTO_PREVIEW = True
 
 SASS = os.path.join(os.path.dirname(DIR), 'bin/sass')
 COMPRESS_PRECOMPILERS = (
