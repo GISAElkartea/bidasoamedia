@@ -5,3 +5,5 @@ bin
 project/db.sqlite
 src
 project/media
+develop-eggs
+parts
