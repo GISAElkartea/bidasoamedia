@@ -133,3 +133,4 @@ COMPRESS_PRECOMPILERS = (
                 )
 
 GRAPPELLI_INDEX_DASHBOARD = 'project.dashboard.Dashboard'
+GRAPPELLI_ADMIN_TITLE = 'bidasoamedia.info'
