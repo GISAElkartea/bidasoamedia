@@ -77,7 +77,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.markup',
     'django.contrib.sitemaps',
-    'django.contrib.admin',
     'django.contrib.comments',
 
     'adminfiles',
@@ -85,6 +84,9 @@ INSTALLED_APPS = (
     'markitup',
     'compressor',
     'sorl.thumbnail',
+
+    'grappelli',
+    'django.contrib.admin',
     
     'project',
     'project.articles',
