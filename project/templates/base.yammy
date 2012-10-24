@@ -1,18 +1,22 @@
-{% load static %}
+{% load static compress %}
 
 html
     head
         title {% block title %}{% endblock title %}
+        {% compress css %}
         link
             - rel stylesheet
-            - type text/css
-            - href {% static 'css/main.css' %}
+            - type text/x-sass
+            - href {% static 'css/main.sass' %}
+        {% endcompress %}
+        {% compress js %}
         script
             - type text/javascript
             - src {% static 'js/jquery.min.js' %}
         script
             - type text/javascript
             - src {% static 'js/jquery.jfeed.js' %}
+        {% endcompress %}
         {% block extra_headers %}{% endblock extra_headers %}
 
     body

@@ -28,6 +28,7 @@ STATICFILES_DIRS = [os.path.join(DIR, 'assets')]
 STATICFILES_FINDERS = (
     'django.contrib.staticfiles.finders.FileSystemFinder',
     'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+    'compressor.finders.CompressorFinder',
 #    'django.contrib.staticfiles.finders.DefaultStorageFinder',
 )
 
@@ -82,6 +83,7 @@ INSTALLED_APPS = (
     'adminfiles',
     'oembed',
     'markitup',
+    'compressor',
     
     'project',
     'project.articles',
@@ -119,3 +121,8 @@ ADMINFILES_FLICKR_API_KEY = ''
 
 #MARKITUP_FILTER = ('project.utils.markup_filter', {'safe_mode': True})
 MARKITUP_FILTER = ('markdown.markdown', {'safe_mode': True})
+
+SASS = os.path.join(os.path.dirname(DIR), 'bin/sass')
+COMPRESS_PRECOMPILERS = (
+                ('text/x-sass', '%s {infile} {outfile}' % SASS),
+                )
