@@ -7,3 +7,5 @@ src
 project/media
 develop-eggs
 parts
+.sass-cache
+project/static

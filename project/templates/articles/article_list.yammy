@@ -1,0 +1,5 @@
+{% extends 'base.yammy' %}
+
+{% for article in article_list %}
+{{ article }}
+{% endfor %}
