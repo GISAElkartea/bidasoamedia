@@ -1,4 +1,4 @@
-from __future__ import unicode_literals
+#from __future__ import unicode_literals
 import os
 
 _ = lambda x: x
@@ -82,6 +82,9 @@ INSTALLED_APPS = (
     'adminfiles',
     'oembed',
     'markitup',
+    
+    'project',
+    'project.articles',
 )
 
 LOGGING = {
@@ -114,4 +117,5 @@ ADMINFILES_FLICKR_USER = ''
 ADMINFILES_FLICKR_API_KEY = ''
 
 
-MARKITUP_FILTER = ('project.utils.markup_filter', {})
+#MARKITUP_FILTER = ('project.utils.markup_filter', {'safe_mode': True})
+MARKITUP_FILTER = ('markdown.markdown', {'safe_mode': True})
