@@ -85,6 +85,7 @@ INSTALLED_APPS = (
     'compressor',
     'sorl.thumbnail',
 
+    'grappelli.dashboard',
     'grappelli',
     'django.contrib.admin',
     
@@ -130,3 +131,5 @@ SASS = os.path.join(os.path.dirname(DIR), 'bin/sass')
 COMPRESS_PRECOMPILERS = (
                 ('text/x-sass', '%s {infile} {outfile}' % SASS),
                 )
+
+GRAPPELLI_INDEX_DASHBOARD = 'project.dashboard.Dashboard'
