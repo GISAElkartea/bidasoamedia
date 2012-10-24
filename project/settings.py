@@ -108,7 +108,6 @@ LOGGING = {
     }
 }
 
-X_FRAME_OPTIONS = 'DENY'
 
 THUMBNAIL_EXTENSION = 'png'
 JQUERY_URL = 'js/jquery.min.js'
@@ -118,7 +117,6 @@ JQUERY_URL = 'js/jquery.min.js'
 #ADMINFILES_VIMEO_USER = ''
 #ADMINFILES_FLICKR_USER = ''
 #ADMINFILES_FLICKR_API_KEY = ''
-ADMINFILES_MEDIA_URL = ''
 
 
 MARKITUP_FILTER = ('project.utils.markup_filter', {'safe_mode': True})

@@ -3,3 +3,4 @@
 bin
 *.pyc
 project/db.sqlite
+src
