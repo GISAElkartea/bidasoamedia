@@ -1,0 +1,99 @@
+# BIDASOAMEDIA.INFO translations.
+# Copyright (C) 2012
+# This file is distributed under the same license as the bidasoamedia package.
+# Unai Zalakain <unai@gisa-elkartea.org>, 2012.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: bidasoamedia 0.1\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2012-10-25 12:25+0200\n"
+"PO-Revision-Date: 2012-10-25 12:26+2\n"
+"Last-Translator: Unai Zalakain <unai@gisa-elkartea.org>\n"
+"Language-Team: EU <unai@gisa-elkartea.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: dashboard.py:14
+msgid "AppList: Applications"
+msgstr ""
+
+#: dashboard.py:23
+msgid "ModelList: Administration"
+msgstr ""
+
+#: dashboard.py:31
+msgid "Support"
+msgstr ""
+
+#: dashboard.py:35
+msgid "Contact the developer"
+msgstr ""
+
+#: dashboard.py:45
+msgid "Recent Actions"
+msgstr ""
+
+#: articles/models.py:11
+msgid "Category"
+msgstr "Kategoria"
+
+#: articles/models.py:12
+msgid "Categories"
+msgstr "Kategoriak"
+
+#: articles/models.py:14
+msgid "name"
+msgstr "izena"
+
+#: articles/models.py:32
+msgid "Article"
+msgstr "Artikulua"
+
+#: articles/models.py:33
+msgid "Articles"
+msgstr "Artikuluak"
+
+#: articles/models.py:35
+msgid "title"
+msgstr "izenburua"
+
+#: articles/models.py:36
+msgid "description"
+msgstr "deskribapena"
+
+#: articles/models.py:37
+msgid "populated from body if not given"
+msgstr "gorputzetik hartua ez bada ematen"
+
+#: articles/models.py:38
+msgid "body"
+msgstr "gorputza"
+
+#: articles/models.py:41
+msgid "publication date"
+msgstr "argitarapen data"
+
+#: articles/models.py:43
+msgid "categories"
+msgstr "kategoriak"
+
+#: feeds/models.py:7
+msgid "Feed"
+msgstr "Jarioa"
+
+#: feeds/models.py:8
+msgid "Feeds"
+msgstr "Jarioak"
+
+#: feeds/models.py:10
+msgid "url"
+msgstr "url-a"
+
+#: feeds/models.py:12
+msgid "quantity"
+msgstr "kantitatea"
