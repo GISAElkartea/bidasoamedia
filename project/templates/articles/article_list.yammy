@@ -1,4 +1,4 @@
-{% extends 'base.yammy' %}
+{% extends base %}
 
 {% for article in article_list %}
 {{ article }}
