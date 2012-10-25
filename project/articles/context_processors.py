@@ -1,5 +1,5 @@
 from project.articles.models import Category
 
 
-def categories(request):
+def category_list(request):
     return {'category_list': Category.objects.all()}
