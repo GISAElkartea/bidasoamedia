@@ -93,6 +93,7 @@ INSTALLED_APPS = (
     
     'project',
     'project.articles',
+    'project.feeds',
 )
 
 LOGGING = {
