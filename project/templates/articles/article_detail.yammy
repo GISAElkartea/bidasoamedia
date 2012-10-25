@@ -1,1 +1,13 @@
 {% extends base %}
+
+{{ article }}
+
+{{ article.description|default: article.body|truncatewords: 50 }}
+
+{{ article.pub_date }}
+
+{% for category in article.categories.select_related %}
+a
+    - href {% url articles:category category.slug %}
+    | {{ category }}
+{% endfor %}
