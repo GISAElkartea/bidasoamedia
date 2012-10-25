@@ -67,6 +67,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.tz',
     'django.contrib.messages.context_processors.messages',
     'project.context_processors.ajax_template',
+    'project.articles.context_processors.categories',
 )
 
 INSTALLED_APPS = (
