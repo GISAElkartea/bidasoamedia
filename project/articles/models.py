@@ -19,7 +19,14 @@ class Category(models.Model):
         return self.name
 
 
+class ArticleManager(models.Manager):
+    def published(self):
+        q = self.get_queryset()
+        return q.filter(pub_date__lte=now())
+
+
 class Article(models.Model):
+    objects = ArticleManager()
     class Meta:
         ordering = ('-pub_date',)
         verbose_name = _('Article')
