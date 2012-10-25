@@ -9,3 +9,4 @@ develop-eggs
 parts
 .sass-cache
 project/static
+*.mo
