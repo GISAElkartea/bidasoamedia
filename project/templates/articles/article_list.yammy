@@ -5,7 +5,11 @@ a
     - href {% url articles:detail article.slug %}
     | {{ article }}
 
-{{ article.description|default: article.body|truncatewords: 50 }}
+{% if article.description %}
+{{ article.description }}
+{% else %}
+{{ article.body|truncatewords: 50 }}
+{% endif %%}
 
 {{ article.pub_date }}
 
