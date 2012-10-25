@@ -23,7 +23,7 @@ html
         {% block extra_headers %}{% endblock extra_headers %}
 
     body
-        {% for category in categories %}
+        {% for category in category_list %}
         a
             - href {% url articles:category category.slug %}
             | {{ category }}

@@ -2,4 +2,4 @@ from project.articles.models import Category
 
 
 def categories(request):
-    return {'categories': Category.objects.all()}
+    return {'category_list': Category.objects.all()}
