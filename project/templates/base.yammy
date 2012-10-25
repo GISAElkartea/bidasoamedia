@@ -16,6 +16,9 @@ html
         script
             - type text/javascript
             - src {% static 'js/jquery.jfeed.js' %}
+        script
+            - type text/javascript
+            - src {% static 'js/bidasoamedia.js' %}
         {% endcompress %}
         {% block extra_headers %}{% endblock extra_headers %}
 
@@ -26,4 +29,5 @@ html
             | {{ category }}
         {% endfor %}
 
-        {% block articles %}{% endblock articles %}
+        section#articles
+            {% block articles %}{% endblock articles %}
