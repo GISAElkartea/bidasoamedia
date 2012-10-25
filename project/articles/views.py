@@ -5,6 +5,7 @@ from project.articles.models import Article, Category
 
 
 class ArticleCategory(ListView):
+    queryset = Article.objects.published()
     template_name = 'articles/article_list.yammy'
     allow_empty = True
 
