@@ -1,11 +1,10 @@
 from django.views.generic import ListView, DetailView
 from django.shortcuts import get_object_or_404
 
-from project.utils import AjaxMixin
 from project.articles.models import Article, Category
 
 
-class ArticleCategory(AjaxMixin, ListView):
+class ArticleCategory(ListView):
     template_name = 'articles/article_list.yammy'
     allow_empty = True
 
@@ -15,12 +14,12 @@ class ArticleCategory(AjaxMixin, ListView):
         return q.filter(categories=category)
 
         
-class ArticleList(AjaxMixin, ListView):
+class ArticleList(ListView):
     template_name = 'articles/article_list.yammy'
     queryset = Article.objects.published()
     allow_empty = True
 
 
-class ArticleDetail(AjaxMixin, DetailView):
+class ArticleDetail(DetailView):
     template_name = 'articles/article_detail.yammy'
     queryset = Article.objects.published()

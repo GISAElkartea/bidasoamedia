@@ -66,6 +66,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
     'django.core.context_processors.tz',
     'django.contrib.messages.context_processors.messages',
+    'project.context_processors.ajax_template',
 )
 
 INSTALLED_APPS = (
@@ -128,6 +129,7 @@ MARKITUP_SKIN = 'markitup/skins/markitup'
 MARKITUP_AUTO_PREVIEW = True
 
 SASS = os.path.join(os.path.dirname(DIR), 'bin/sass')
+COMPRESS_OUTPUT_DIR = 'cache'
 COMPRESS_PRECOMPILERS = (
                 ('text/x-sass', '%s {infile} {outfile}' % SASS),
                 )
