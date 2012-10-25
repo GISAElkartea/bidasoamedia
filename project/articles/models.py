@@ -21,7 +21,7 @@ class Category(models.Model):
 
 class ArticleManager(models.Manager):
     def published(self):
-        q = self.get_queryset()
+        q = self.get_query_set()
         return q.filter(pub_date__lte=now())
 
 

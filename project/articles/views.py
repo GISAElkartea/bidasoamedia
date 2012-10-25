@@ -1,8 +1,26 @@
 from django.views.generic import ListView, DetailView
+from django.shortcuts import get_object_or_404
 
+from project.utils import AjaxMixin
 from project.articles.models import Article, Category
 
 
-class ArticleList(ListView):
+class ArticleCategory(AjaxMixin, ListView):
     template_name = 'articles/article_list.yammy'
-    model = Article
+    allow_empty = True
+
+    def get_queryset(self, *args, **kwargs):
+        q = super(ArticleCategory, self).get_queryset(*args, **kwargs)
+        category = get_object_or_404(Category, slug=self.kwargs['slug'])
+        return q.filter(categories=category)
+
+        
+class ArticleList(AjaxMixin, ListView):
+    template_name = 'articles/article_list.yammy'
+    queryset = Article.objects.published()
+    allow_empty = True
+
+
+class ArticleDetail(AjaxMixin, DetailView):
+    template_name = 'articles/article_detail.yammy'
+    queryset = Article.objects.published()
