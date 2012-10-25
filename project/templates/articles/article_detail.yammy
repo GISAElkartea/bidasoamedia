@@ -1,5 +1,7 @@
 {% extends base %}
 
+{% block articles %}
+
 {{ article }}
 
 {% if article.description %}
@@ -15,3 +17,5 @@ a
     - href {% url articles:category category.slug %}
     | {{ category }}
 {% endfor %}
+
+{% endblock articles %}

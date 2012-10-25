@@ -26,4 +26,4 @@ html
             | {{ category }}
         {% endfor %}
 
-        {% block content %}{% endblock content %}
+        {% block articles %}{% endblock articles %}

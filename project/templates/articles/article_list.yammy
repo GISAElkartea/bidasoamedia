@@ -1,5 +1,7 @@
 {% extends base %}
 
+{% block articles %}
+
 {% for article in article_list %}
 a
     - href {% url articles:detail article.slug %}
@@ -20,3 +22,5 @@ a
 {% endfor %}
 
 {% endfor %}
+
+{% endblock articles %}
