@@ -6,8 +6,9 @@ from project.articles.models import Article, Category
 
 class ArticleCategory(ListView):
     queryset = Article.objects.published()
-    template_name = 'articles/article_list.yammy'
     allow_empty = True
+    template_name = 'articles/article_list.yammy'
+    context_object_name = 'article_list'
 
     def get_queryset(self, *args, **kwargs):
         q = super(ArticleCategory, self).get_queryset(*args, **kwargs)
@@ -16,9 +17,10 @@ class ArticleCategory(ListView):
 
         
 class ArticleList(ListView):
-    template_name = 'articles/article_list.yammy'
     queryset = Article.objects.published()
     allow_empty = True
+    template_name = 'articles/article_list.yammy'
+    context_object_name = 'article_list'
 
 
 class ArticleDetail(DetailView):
