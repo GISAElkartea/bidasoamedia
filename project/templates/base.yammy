@@ -2,7 +2,7 @@
 
 html
     head
-        title {% block title %}{% endblock title %}
+        title bidasoamedia{% block title %}{% endblock title %}
         {% compress css %}
         link
             - rel stylesheet
@@ -20,4 +20,10 @@ html
         {% block extra_headers %}{% endblock extra_headers %}
 
     body
+        {% for category in categories %}
+        a
+            - href {% url articles:category category.slug %}
+            | {{ category }}
+        {% endfor %}
+
         {% block content %}{% endblock content %}
