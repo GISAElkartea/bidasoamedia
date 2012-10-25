@@ -9,8 +9,8 @@ admin.autodiscover()
 
 
 urlpatterns = patterns('',
-        url('^', include('project.articles.urls', namespace='articles')),
-        url(r'^grappelli', include('grappelli.urls')),
+        url(r'^articles/', include('project.articles.urls', namespace='articles')),
+        url(r'^grappelli/', include('grappelli.urls')),
         url(r'^admin/', include(admin.site.urls)),
         url(r'^adminfiles/', include('adminfiles.urls')),
         url(r'^markitup/', include('markitup.urls')),
