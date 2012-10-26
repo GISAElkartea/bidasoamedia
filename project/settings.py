@@ -139,3 +139,5 @@ COMPRESS_PRECOMPILERS = (
 
 GRAPPELLI_INDEX_DASHBOARD = 'project.dashboard.Dashboard'
 GRAPPELLI_ADMIN_TITLE = 'bidasoamedia.info'
+
+FEED_CACHE_TIME = 300

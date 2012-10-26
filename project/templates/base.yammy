@@ -25,3 +25,7 @@ html
             - href {% url articles:category category.slug %}
             | {{ category }}
         {% endfor %}
+
+        {% for feed in feed_list %}
+        {{ feed }}
+        {% endfor %}
