@@ -15,9 +15,6 @@ html
             - src {% static 'js/jquery.min.js' %}
         script
             - type text/javascript
-            - src {% static 'js/jquery.jfeed.js' %}
-        script
-            - type text/javascript
             - src {% static 'js/bidasoamedia.js' %}
         {% endcompress %}
         {% block extra_headers %}{% endblock extra_headers %}
@@ -28,6 +25,3 @@ html
             - href {% url articles:category category.slug %}
             | {{ category }}
         {% endfor %}
-
-        section#articles
-            {% block articles %}{% endblock articles %}
