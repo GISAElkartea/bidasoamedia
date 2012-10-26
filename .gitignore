@@ -10,3 +10,4 @@ parts
 .sass-cache
 project/static
 *.mo
+celerybeat.pid

@@ -1,6 +1,5 @@
 from django.db import models
 from django.core.cache import cache
-from django.conf import settings
 from django.utils.translation import ugettext as _
 
 from feedparser import parse
@@ -30,5 +29,5 @@ class Feed(models.Model):
             
     def update(self):
         feed = parse(self.url)
-        cache.set(self.cache_key, feed.entries, settings.FEED_CACHE_TIME)
+        cache.set(self.cache_key, feed.entries)
         return feed.entries

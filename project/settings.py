@@ -1,5 +1,7 @@
 #from __future__ import unicode_literals
 import os
+from datetime import timedelta
+
 
 _ = lambda x: x
 DIR = os.path.dirname(__file__)
@@ -87,6 +89,7 @@ INSTALLED_APPS = (
     'markitup',
     'compressor',
     'sorl.thumbnail',
+    'djcelery',
 
     'grappelli.dashboard',
     'grappelli',
@@ -140,4 +143,16 @@ COMPRESS_PRECOMPILERS = (
 GRAPPELLI_INDEX_DASHBOARD = 'project.dashboard.Dashboard'
 GRAPPELLI_ADMIN_TITLE = 'bidasoamedia.info'
 
-FEED_CACHE_TIME = 300
+# add to WSGI too
+import djcelery
+djcelery.setup_loader()
+
+BROKER_URL = 'django://'
+CELERY_IMPORTS = ('project.feeds.tasks',)
+CELERYBEAT_SCHEDULER = 'djcelery.schedulers.DatabaseScheduler'
+CELERYBEAT_SCHEDULE = {
+        'update_feeds': {
+            'task': 'project.feeds.tasks.update_feeds',
+            'schedule': timedelta(seconds=300),
+            },
+        }
