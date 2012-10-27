@@ -27,5 +27,10 @@ html
         {% endfor %}
 
         {% for feed in feed_list %}
-        {{ feed }}
+        {% for news in feed.parse %}
+        article
+            img [src="{{ feed.favicon }}"]
+            a [href="{{ news.link }}"] {{ news.title }}
+            p {{ news.summary|striptags|safe }}
+        {% endfor %}
         {% endfor %}
