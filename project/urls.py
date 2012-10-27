@@ -1,4 +1,5 @@
 from django.conf.urls.defaults import patterns, include, url
+from django.views.generic import RedirectView
 from django.conf import settings
 
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
@@ -9,6 +10,7 @@ admin.autodiscover()
 
 
 urlpatterns = patterns('',
+        url(r'^$', RedirectView.as_view(url='articles')),
         url(r'^articles/', include('project.articles.urls', namespace='articles')),
         url(r'^grappelli/', include('grappelli.urls')),
         url(r'^admin/', include(admin.site.urls)),
