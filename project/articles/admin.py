@@ -12,7 +12,7 @@ admin.site.register(Category, CategoryAdmin)
 
 class ArticleAdmin(FilePickerAdmin):
     date_hierarchy = 'pub_date'
-    fields = (('title', 'pub_date'), 'categories', 'description', 'body')
+    fields = (('title', 'pub_date'), 'image', 'categories', 'description', 'body')
     filter_horizontal = ('categories',)
     list_display = ('title', 'pub_date')
     list_filter = ('categories', 'pub_date')
