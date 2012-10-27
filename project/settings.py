@@ -90,6 +90,7 @@ INSTALLED_APPS = (
     'compressor',
     'sorl.thumbnail',
     'djcelery',
+    'feedback',
 
     'grappelli.dashboard',
     'grappelli',

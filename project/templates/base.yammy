@@ -8,6 +8,10 @@ html
             - rel stylesheet
             - type text/x-sass
             - href {% static 'css/main.sass' %}
+        link
+            - rel stylesheet
+            - type text/css
+            - href {% static 'feedback/main.css' %}
         {% endcompress %}
         {% compress js %}
         script
@@ -16,10 +20,18 @@ html
         script
             - type text/javascript
             - src {% static 'js/bidasoamedia.js' %}
+        script
+            - type text/javascript
+            - src {% static 'feedback/jquery.form.js' %}
+        script
+            - type text/javascript
+            - src {% static 'feedback/main.js' %}
         {% endcompress %}
+
         {% block extra_headers %}{% endblock extra_headers %}
 
     body
+        {% include 'feedback/button.html' %}
         {% for category in category_list %}
         a
             - href {% url articles:category category.slug %}
