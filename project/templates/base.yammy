@@ -26,6 +26,8 @@ html
             | {{ category }}
         {% endfor %}
 
+        {% block articles %}{% endblock articles %}
+
         {% for feed in feed_list %}
         {% for news in feed.parse %}
         article

@@ -1,6 +1,7 @@
 from django.contrib import admin
 
 from adminfiles.admin import FilePickerAdmin
+from sorl.thumbnail.admin import AdminImageMixin
 
 from project.articles.models import Article, Category
 
@@ -10,7 +11,7 @@ class CategoryAdmin(admin.ModelAdmin):
 admin.site.register(Category, CategoryAdmin)
 
 
-class ArticleAdmin(FilePickerAdmin):
+class ArticleAdmin(AdminImageMixin, FilePickerAdmin):
     date_hierarchy = 'pub_date'
     fields = (('title', 'pub_date'), 'image', 'categories', 'description', 'body')
     filter_horizontal = ('categories',)

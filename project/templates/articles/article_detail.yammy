@@ -4,6 +4,10 @@
 
 {{ article }}
 
+{% thumbnail article.image "100x100" crop="center" as image %}
+img [src="{{ image.url }}"]
+{% endthumbnail %}
+
 {% if article.description %}
 {{ article.description }}
 {% else %}

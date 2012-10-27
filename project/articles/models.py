@@ -4,6 +4,7 @@ from django.utils.timezone import now
 
 from markitup.fields import MarkupField
 from autoslug import AutoSlugField
+from sorl.thumbnail import ImageField
 
 
 class Category(models.Model):
@@ -36,7 +37,7 @@ class Article(models.Model):
     description = MarkupField(blank=True, verbose_name=_('description'), 
             help_text=_('populated from body if not given'))
     body = MarkupField(verbose_name=_('body'))
-    image = models.ImageField(blank=True, upload_to='images',
+    image = ImageField(blank=True, upload_to='images',
             verbose_name=_('image'))
 
     pub_date = models.DateTimeField(default=now,
