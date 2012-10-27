@@ -3,6 +3,7 @@ from django.core.cache import cache
 from django.utils.translation import ugettext as _
 
 from feedparser import parse
+from purl import URL
 
 
 class Feed(models.Model):
@@ -16,6 +17,10 @@ class Feed(models.Model):
 
     def __unicode__(self):
         return self.url
+
+    @property
+    def favicon(self):
+        return URL(self.url).path('favicon.ico').as_string()
 
     @property
     def cache_key(self):
