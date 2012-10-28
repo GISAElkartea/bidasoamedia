@@ -50,6 +50,13 @@ html
                 {% block articles %}{% endblock articles %}
 
         # {% include 'feedback/button.yammy' %}
+
+        {% for flatpage in flatpage_list %}
+        a
+            - href {{ flatpage.get_absolute_url }}
+            | {{ flatpage }}
+        {% endfor %}
+
         {% for feed in feed_list %}
         {% for news in feed.parse %}
         article
