@@ -1,0 +1,2434 @@
+[
+    {
+        "pk": 16,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "article",
+            "name": "Article",
+            "app_label": "articles"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "category",
+            "name": "Category",
+            "app_label": "articles"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "contactpreferences",
+            "name": "Contact Preferences",
+            "app_label": "preferences"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "feed",
+            "name": "Feed",
+            "app_label": "feeds"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "aggregatemedia",
+            "name": "aggregate media",
+            "app_label": "oembed"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "contenttype",
+            "name": "content type",
+            "app_label": "contenttypes"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "crontabschedule",
+            "name": "crontab",
+            "app_label": "djcelery"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "feedback",
+            "name": "feedback",
+            "app_label": "feedback"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "fileupload",
+            "name": "file upload",
+            "app_label": "adminfiles"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "fileuploadreference",
+            "name": "file upload reference",
+            "app_label": "adminfiles"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "flatpage",
+            "name": "flatpage",
+            "app_label": "flat"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "group",
+            "name": "group",
+            "app_label": "auth"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "intervalschedule",
+            "name": "interval",
+            "app_label": "djcelery"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "kvstore",
+            "name": "kv store",
+            "app_label": "thumbnail"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "logentry",
+            "name": "log entry",
+            "app_label": "admin"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "migrationhistory",
+            "name": "migration history",
+            "app_label": "south"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "periodictask",
+            "name": "periodic task",
+            "app_label": "djcelery"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "periodictasks",
+            "name": "periodic tasks",
+            "app_label": "djcelery"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "permission",
+            "name": "permission",
+            "app_label": "auth"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "preferences",
+            "name": "preferences",
+            "app_label": "preferences"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "session",
+            "name": "session",
+            "app_label": "sessions"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "site",
+            "name": "site",
+            "app_label": "sites"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "storedoembed",
+            "name": "stored OEmbed",
+            "app_label": "oembed"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "storedprovider",
+            "name": "stored provider",
+            "app_label": "oembed"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "taskstate",
+            "name": "task",
+            "app_label": "djcelery"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "taskmeta",
+            "name": "task meta",
+            "app_label": "djcelery"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "tasksetmeta",
+            "name": "taskset meta",
+            "app_label": "djcelery"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "user",
+            "name": "user",
+            "app_label": "auth"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "contenttypes.contenttype",
+        "fields": {
+            "model": "workerstate",
+            "name": "worker",
+            "app_label": "djcelery"
+        }
+    },
+    {
+        "pk": "4d7bb8c995db81490d2931cb1ac74664",
+        "model": "sessions.session",
+        "fields": {
+            "expire_date": "2012-11-11T18:34:02.745",
+            "session_data": "NGU2ZGVhOTg1MDMyOTM3MzkxYjZmNTNkYjk1NjY1ZTNiZjY1YzQ3ZjqAAn1xAShVEl9hdXRoX3Vz\nZXJfYmFja2VuZHECVSlkamFuZ28uY29udHJpYi5hdXRoLmJhY2tlbmRzLk1vZGVsQmFja2VuZHED\nVQ1fYXV0aF91c2VyX2lkcQRLA3Uu\n"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "sites.site",
+        "fields": {
+            "domain": "bidasoamedia.info",
+            "name": "bidasoamedia.info"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "south.migrationhistory",
+        "fields": {
+            "applied": "2012-10-28T18:30:54.671",
+            "app_name": "oembed",
+            "migration": "0001_initial"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "south.migrationhistory",
+        "fields": {
+            "applied": "2012-10-28T18:30:57.169",
+            "app_name": "djcelery",
+            "migration": "0001_initial"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "south.migrationhistory",
+        "fields": {
+            "applied": "2012-10-28T18:30:58.201",
+            "app_name": "djcelery",
+            "migration": "0002_v25_changes"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "adminfiles.fileupload",
+        "fields": {
+            "upload_date": "2012-10-28T23:10:37.676",
+            "description": "",
+            "title": "taberna",
+            "upload": "adminfiles/p006_f01.jpg",
+            "sub_type": "jpeg",
+            "content_type": "image",
+            "slug": "taberna"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "adminfiles.fileupload",
+        "fields": {
+            "upload_date": "2012-10-28T23:10:54.344",
+            "description": "",
+            "title": "amona",
+            "upload": "adminfiles/p006_f02.jpg",
+            "sub_type": "jpeg",
+            "content_type": "image",
+            "slug": "amona"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "adminfiles.fileupload",
+        "fields": {
+            "upload_date": "2012-10-28T23:11:10.025",
+            "description": "",
+            "title": "mobida",
+            "upload": "adminfiles/p006_f03.jpg",
+            "sub_type": "jpeg",
+            "content_type": "image",
+            "slug": "mobida"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "adminfiles.fileupload",
+        "fields": {
+            "upload_date": "2012-10-28T23:11:23.872",
+            "description": "",
+            "title": "jaten",
+            "upload": "adminfiles/p006_f04.jpg",
+            "sub_type": "jpeg",
+            "content_type": "image",
+            "slug": "jaten"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "adminfiles.fileupload",
+        "fields": {
+            "upload_date": "2012-10-28T23:14:12.040",
+            "description": "",
+            "title": "sustrai colina",
+            "upload": "adminfiles/p050_f02.jpg",
+            "sub_type": "jpeg",
+            "content_type": "image",
+            "slug": "sustrai-colina"
+        }
+    },
+    {
+        "pk": 31,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*?23hq.com/\\S*/photo/\\S*",
+            "wildcard_regex": "http://*.23hq.com/*/photo/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "photo"
+        }
+    },
+    {
+        "pk": 26,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*imgur.com/\\S*",
+            "wildcard_regex": "http://*.imgur.com/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "photo"
+        }
+    },
+    {
+        "pk": 28,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "(http://i\\S*.photobucket.com/albums/\\S*|http://gi\\S*.photobucket.com/groups/\\S*)",
+            "wildcard_regex": "http://*.photobucket.com/albums/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "photo"
+        }
+    },
+    {
+        "pk": 25,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*twitpic.com/\\S*",
+            "wildcard_regex": "http://*.twitpic.com/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "photo"
+        }
+    },
+    {
+        "pk": 23,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*yfrog.\\S*/\\S*",
+            "wildcard_regex": "http://*.yfrog.*/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "photo"
+        }
+    },
+    {
+        "pk": 29,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://phodroid.com/\\S*/\\S*/\\S*",
+            "wildcard_regex": "http://phodroid.com/*/*/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "photo"
+        }
+    },
+    {
+        "pk": 24,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://tweetphoto.com/\\S*",
+            "wildcard_regex": "http://tweetphoto.com/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "photo"
+        }
+    },
+    {
+        "pk": 27,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://twitgoo.com/\\S*",
+            "wildcard_regex": "http://twitgoo.com/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "photo"
+        }
+    },
+    {
+        "pk": 30,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://xkcd.com/\\S*",
+            "wildcard_regex": "http://xkcd.com/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "photo"
+        }
+    },
+    {
+        "pk": 32,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "(http://\\S*amazon.\\S*/gp/product/\\S*|http://\\S*amazon.\\S*/\\S*/dp/\\S*|http://\\S*amazon.\\S*/dp/\\S*|http://\\S*amazon.\\S*/o/ASIN/\\S*|http://\\S*amazon.\\S*/gp/offer-listing/\\S*|http://\\S*amazon.\\S*/\\S*/ASIN/\\S*|http://\\S*amazon.\\S*/gp/product/images/\\S*)",
+            "wildcard_regex": "http://*.amazon.*/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "rich"
+        }
+    },
+    {
+        "pk": 16,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*.scribd.com/doc/\\S*",
+            "wildcard_regex": "http://*.scribd.com/doc/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "rich"
+        }
+    },
+    {
+        "pk": 11,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://twitter.com/\\S*/statuses/\\S*",
+            "wildcard_regex": "http://twitter.com/*/statuses/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "rich"
+        }
+    },
+    {
+        "pk": 21,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://www.clearspring.com/widgets/\\S*",
+            "wildcard_regex": "http://www.clearspring.com/widgets/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "rich"
+        }
+    },
+    {
+        "pk": 47,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://www.lala.com/#*(album|song)/\\S*",
+            "wildcard_regex": "http://www.lala.com/*/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "rich"
+        }
+    },
+    {
+        "pk": 15,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://www.slideshare.net/\\S*/\\S*",
+            "wildcard_regex": "http://www.slideshare.net/*/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "rich"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*blip.tv/file/\\S*",
+            "wildcard_regex": "http://*.blip.tv/file/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 6,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*.collegehumor.com/video:\\S*",
+            "wildcard_regex": "http://*.collegehumor.com/video:*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 49,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*crackle.com/c/\\S*",
+            "wildcard_regex": "http://*.crackle.com/c/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 36,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "(http://\\S*.dailymotion.com/video/\\S*|http://\\S*.dailymotion.com/\\S*/video/\\S*)",
+            "wildcard_regex": "http://*.dailymotion.com/*/video/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 7,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*.funnyordie.com/videos/\\S*",
+            "wildcard_regex": "http://*.funnyordie.com/videos/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 34,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*justin.tv/\\S*",
+            "wildcard_regex": "http://*.justin.tv/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 43,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*?liveleak.com/view?\\S*",
+            "wildcard_regex": "http://*.liveleak.com/view?*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 10,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*.metacafe.com/watch/\\S*",
+            "wildcard_regex": "http://*.metacafe.com/watch/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 39,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://(www|vids).myspace.com/index.cfm\\?fuseaction=\\S*&videoid\\S*",
+            "wildcard_regex": "http://*.myspace.com/index.cfm?fuseaction=*&videoid=*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 53,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*nfb.ca/film/\\S*",
+            "wildcard_regex": "http://*.nfb.ca/film/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 52,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*omnisio.com/\\S*",
+            "wildcard_regex": "http://*.omnisio.com/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 41,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*revver.com/video/\\S*",
+            "wildcard_regex": "http://*.revver.com/video/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 20,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "(http://\\S*?screencast.com/\\S*/media/\\S*|http://\\S*?screencast.com/t/\\S*)",
+            "wildcard_regex": "http://*.screencast.com/*/media/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 58,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*theonion.com/video/\\S*",
+            "wildcard_regex": "http://*.theonion.com/video/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 44,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://animoto.com/(play|s)/\\S*",
+            "wildcard_regex": "http://animoto.com/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 45,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://dotsub.com/view/\\S*",
+            "wildcard_regex": "http://dotsub.com/view/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 48,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "(http://movieclips.com/watch/\\S*/\\S*/|http://movieclips.com/watch/\\S*/\\S*/\\S*/\\S*)",
+            "wildcard_regex": "http://movieclips.com/watch/*/*)",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 55,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://movies.yahoo.com/movie/\\S*/(video|info|trailer)/\\S*",
+            "wildcard_regex": "http://movies.yahoo.com/movie/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 22,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "(http://my.opera.com/\\S*/albums/show.dml\\?id=\\S*|http://my.opera.com/\\S*/albums/showpic.dml\\?album=\\S*&picture=\\S*)",
+            "wildcard_regex": "http://my.opera.com/*/albums/showpic.dml?album=*&picture=*)",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 17,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://screenr.com/\\S*",
+            "wildcard_regex": "http://screenr.com/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 46,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://soundcloud.com/\\S*",
+            "wildcard_regex": "http://soundcloud.com/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 8,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://video.google.com/videoplay?\\S*",
+            "wildcard_regex": "http://video.google.com/videoplay?*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 42,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "(http://video.yahoo.com/watch/\\S*/\\S*|http://video.yahoo.com/network/\\S*)",
+            "wildcard_regex": "http://video.yahoo.com/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 59,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://wordpress.tv/\\S*/\\S*/\\S*/\\S*/",
+            "wildcard_regex": "http://wordpress.tv/*/*/*/*/",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 18,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://www.5min.com/Video/\\S*",
+            "wildcard_regex": "http://www.5min.com/Video/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 38,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://www.break.com/\\S*/\\S*",
+            "wildcard_regex": "http://www.break.com/*/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 56,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://www.colbertnation.com/(the-colbert-report-collections|full-episodes|the-colbert-report-videos)/\\S*",
+            "wildcard_regex": "http://www.colbertnation.com/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 57,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://www.comedycentral.com/videos/index.jhtml?\\S*",
+            "wildcard_regex": "http://www.comedycentral.com/videos/index.jhtml?*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 61,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://www.escapistmagazine.com/videos/\\S*",
+            "wildcard_regex": "http://www.escapistmagazine.com/videos/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 50,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://www.fancast.com/\\S*/videos",
+            "wildcard_regex": "http://www.fancast.com/*/videos",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 19,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://www.howcast.com/videos/\\S*",
+            "wildcard_regex": "http://www.howcast.com/videos/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 9,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://www.hulu.com/watch/\\S*",
+            "wildcard_regex": "http://www.hulu.com/watch/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 51,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://www.ted.com/talks/\\S*.html",
+            "wildcard_regex": "http://www.ted.com/talks/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 54,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "(http://www.thedailyshow.com/(watch|full-episodes)/\\S*|http://www.thedailyshow.com/collection/\\S*/\\S*/\\S*)",
+            "wildcard_regex": "http://www.thedailyshow.com/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 60,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://www.traileraddict.com/(trailer|clip|poster)/\\S*",
+            "wildcard_regex": "http://www.traileraddict.com/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 37,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://www.twitvid.com/\\S*",
+            "wildcard_regex": "http://www.twitvid.com/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 35,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://www.ustream.tv/(recorded|channel)/\\S*",
+            "wildcard_regex": "http://www.ustream.tv/*/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 33,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://www.veoh.com/\\S*/watch/\\S*",
+            "wildcard_regex": "http://www.veoh.com/*/watch/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.embed.ly/v1/api/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 4,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*?pownce.com/\\S*",
+            "wildcard_regex": "http://*.pownce.com/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://api.pownce.com/2.1/oembed.json",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*?viddler.com/\\S*",
+            "wildcard_regex": "http://*.viddler.com/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://lab.viddler.com/services/oembed/",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 12,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*.wikipedia.org/wiki/\\S*",
+            "wildcard_regex": "http://*.wikipedia.org/wiki/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://oohembed.com/oohembed/",
+            "resource_type": "rich"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://qik.com/\\S*",
+            "wildcard_regex": "http://qik.com/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://qik.com/api/oembed.json",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 5,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*?revision3.com/\\S*",
+            "wildcard_regex": "http://*.revision3.com/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://revision3.com/api/oembed/",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://vimeo.com/\\S*",
+            "wildcard_regex": "http://vimeo.com/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://vimeo.com/api/oembed.json",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*?flickr.com/\\S*",
+            "wildcard_regex": "http://*.flickr.com/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://www.flickr.com/services/oembed/",
+            "resource_type": "photo"
+        }
+    },
+    {
+        "pk": 13,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://\\S*.youtube.com/watch\\S*",
+            "wildcard_regex": "http://www.youtube.com/watch*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://www.youtube.com/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
+        "pk": "sorl-thumbnail||image||ebd1de37f7a060d8aa5ab71272ef352e",
+        "model": "thumbnail.kvstore",
+        "fields": {
+            "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"adminfiles/p006_f01.jpg\", \"size\": [240, 138]}"
+        }
+    },
+    {
+        "pk": "sorl-thumbnail||image||c9b26ce04b24e7b92b6098a46c3f3347",
+        "model": "thumbnail.kvstore",
+        "fields": {
+            "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/06/26/0626c2abf27553c58610415296a47780.jpg\", \"size\": [144, 83]}"
+        }
+    },
+    {
+        "pk": "sorl-thumbnail||thumbnails||ebd1de37f7a060d8aa5ab71272ef352e",
+        "model": "thumbnail.kvstore",
+        "fields": {
+            "value": "[\"c9b26ce04b24e7b92b6098a46c3f3347\"]"
+        }
+    },
+    {
+        "pk": "sorl-thumbnail||image||e106aee63638aa4cf8aa067dd48140a9",
+        "model": "thumbnail.kvstore",
+        "fields": {
+            "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"adminfiles/p006_f02.jpg\", \"size\": [240, 138]}"
+        }
+    },
+    {
+        "pk": "sorl-thumbnail||image||4a05e957eba8efac7d967c501823b976",
+        "model": "thumbnail.kvstore",
+        "fields": {
+            "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/2a/30/2a30f0ac2ca1f3e53f0becbbdc347207.jpg\", \"size\": [144, 83]}"
+        }
+    },
+    {
+        "pk": "sorl-thumbnail||thumbnails||e106aee63638aa4cf8aa067dd48140a9",
+        "model": "thumbnail.kvstore",
+        "fields": {
+            "value": "[\"4a05e957eba8efac7d967c501823b976\"]"
+        }
+    },
+    {
+        "pk": "sorl-thumbnail||image||9b9ac15415cfa6e41bfbd2663727f2d2",
+        "model": "thumbnail.kvstore",
+        "fields": {
+            "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"adminfiles/p006_f03.jpg\", \"size\": [240, 123]}"
+        }
+    },
+    {
+        "pk": "sorl-thumbnail||image||2d504726330cf849ab7fa43e77699fcc",
+        "model": "thumbnail.kvstore",
+        "fields": {
+            "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/29/07/290769c1f430d2d5fa655905a7dd1d05.jpg\", \"size\": [144, 74]}"
+        }
+    },
+    {
+        "pk": "sorl-thumbnail||thumbnails||9b9ac15415cfa6e41bfbd2663727f2d2",
+        "model": "thumbnail.kvstore",
+        "fields": {
+            "value": "[\"2d504726330cf849ab7fa43e77699fcc\"]"
+        }
+    },
+    {
+        "pk": "sorl-thumbnail||image||14d2f270da9c0a2f45414554d7e6157b",
+        "model": "thumbnail.kvstore",
+        "fields": {
+            "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"adminfiles/p006_f04.jpg\", \"size\": [240, 165]}"
+        }
+    },
+    {
+        "pk": "sorl-thumbnail||image||68cfa31df877d15355c4315da474c423",
+        "model": "thumbnail.kvstore",
+        "fields": {
+            "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/c0/90/c090b5e0f2b1bfadf8461742746e2010.jpg\", \"size\": [144, 99]}"
+        }
+    },
+    {
+        "pk": "sorl-thumbnail||thumbnails||14d2f270da9c0a2f45414554d7e6157b",
+        "model": "thumbnail.kvstore",
+        "fields": {
+            "value": "[\"68cfa31df877d15355c4315da474c423\"]"
+        }
+    },
+    {
+        "pk": "sorl-thumbnail||image||078e801a014df6297d6cfb7d11b9cb92",
+        "model": "thumbnail.kvstore",
+        "fields": {
+            "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"adminfiles/p050_f02.jpg\", \"size\": [240, 116]}"
+        }
+    },
+    {
+        "pk": "sorl-thumbnail||image||21681e92dc58f96dda0076f9c0347f97",
+        "model": "thumbnail.kvstore",
+        "fields": {
+            "value": "{\"storage\": \"django.core.files.storage.FileSystemStorage\", \"name\": \"cache/c3/cb/c3cb55c2b3aa64e33a24ba101541d815.jpg\", \"size\": [144, 70]}"
+        }
+    },
+    {
+        "pk": "sorl-thumbnail||thumbnails||078e801a014df6297d6cfb7d11b9cb92",
+        "model": "thumbnail.kvstore",
+        "fields": {
+            "value": "[\"21681e92dc58f96dda0076f9c0347f97\"]"
+        }
+    },
+    {
+        "pk": 1,
+        "model": "preferences.preferences",
+        "fields": {
+            "sites": [
+                1
+            ]
+        }
+    },
+    {
+        "pk": 1,
+        "model": "preferences.contactpreferences",
+        "fields": {
+            "text": "Helbidea:\r\n=========\r\n\r\n14 Bd. du Gal de Gaulle\r\n64.700 Hendaia\r\nKontrakale Kalea, 14\r\n20.300 Ir\u00fan\r\n\r\nTelefonoa\r\n=========\r\n\r\n+ 33 5 59 48 36 65\r\n\r\nFaxa\r\n====\r\n\r\n+ 33 5 59 48 30 65 ",
+            "_text_rendered": "<h1>Helbidea:</h1>\n<p>14 Bd. du Gal de Gaulle\n64.700 Hendaia\nKontrakale Kalea, 14\n20.300 Ir\u00fan</p>\n<h1>Telefonoa</h1>\n<ul>\n<li>33 5 59 48 36 65</li>\n</ul>\n<h1>Faxa</h1>\n<ul>\n<li>33 5 59 48 30 65 </li>\n</ul>",
+            "email": "kontaktua@bidasoamedia.info",
+            "sites": [
+                1
+            ]
+        }
+    },
+    {
+        "pk": 1,
+        "model": "articles.category",
+        "fields": {
+            "name": "politika",
+            "slug": "politika"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "articles.category",
+        "fields": {
+            "name": "gizartea",
+            "slug": "gizartea"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "articles.category",
+        "fields": {
+            "name": "kronika",
+            "slug": "kronika"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "articles.article",
+        "fields": {
+            "body": "<<<sustrai-colina:class=left>>>\r\n\r\nAntso Azkarra izan zen Donibane Garaziko hiribilduan eliza eta gotorlekua eraikitzearen arduradun. XII.mendea zen hori, eta ordutik hona historia bizia izan du hiribildu horrek, barneko bizimoldean euskarari lotua izan delarik beti ere. Ez da handik urrun Vauban zinema, non atzo euskaraz sorturiko kopla berriak entzun ahal izan ziren, doinu eta kantaera goxoarekin gainera.\r\n\r\nBaxenabarreko hiriburuan ospatu zen Xilaba bertsolari txapelketako azken finalerdia. 300dik gora bertsozale elkartu ziren Vauban zineman, eta jadanik ezagunak dira Baionan kantatuko duten sei bertsolarien izenak, hona: Amets Arzallus, Sustrai Colina, Odei Barroso, Eneritz Zabaleta, Xumai Murua eta Maddi Sarasua. Sei horiek azaroaren 10ean ariko dira kantuan 2012ko txapelduna erabakitzeko norgehiagokan.\r\n\r\nSaioan garaile Sustrai Colina izan zen, eta bigarren postua Odei Barrosok eskuratu zuen. Hirugarren izan zen Maddi Sarasua, txapelketa honetan ezustekorik handiena eman duen bertsolari gaztea. 16 urte ditu Itsasuko neskatilak, eta lehen parte hartzea du txapelketa handian; halarik ere, finalean sartzea lortu du.\r\n\r\nAgur honekin hasi zuen saioa itsasuarrak: \u00abNahiz ta nahiago nukeen hor beheretik entzun/ zuen ilusioei nahi diet erantzun/ lagun artean gira presioa urrun/ bertso maitale gisa kantatu dezagun\u00bb. Eta argi geratu zen presiorik gabe aritu zela. Orain, agian nahiago luke finala oholtza beheretik bizitzea, baina presiorik gabe jarduten bada, etorkizun polita duen bertsolaria dela erakutsiko duela segur da.\r\n\r\n8ko handian ale politak\r\n=======================\r\n\r\nAriketa puntuagarriak zortziko handikoarekin hasi ziren. Ramuntxo Christy eta Egoitz Zelaia izan ziren lehenak kantuan, eta honela zioen gaiak: \u00abBerriki elgar ezagutu duzue, Compostelako bidean zaudete, eta Ramuntxok goiz osoan ez du hitzik egin. Ongi hasi zen Zelaia: \u00abBere jarrerak nire iritziz ez du nahi adina zentzun/ mikrofono bat jarrita ere ezingo zintudan entzun\u00bb, eta bikain erantzun zion Ramuntxok: \u00abBide hunetan gurutzatuak ta eginak gira lagun/ ezezaguna egiten baita bidean fite ezagun/ baina zu otoi isildu zite ni bakean utzi egun/ Jaungoikoarekin mintzo naiz eta nahiago dut hura entzun\u00bb. Saio polita egin zuten biek, eta domaia Egoitzek akats batzuk egin izana, biziki bertsoaldi politak osatu baitzituen.\r\n\r\nSustrai Colina eta Maddi Sarasuak eginiko lana ere aipagarria izan zen ariketa honetan. Maddi esne lantegi bateko kudeatzaileak Sustrai laborariari erran dio esnea prezio apalagoan erosiko duela. Honela hasi zen Colina: \u00abAzken urtetan harremanetan aritu gara ni ta zu/ ta prezioa jaisten joan da krisia zen amenazu/ ta gaur esnea uraren pare erosi nahia daukazu/ ta hurrengoan nik ordaintzea eskatuko al didazu?\u00bb eta \u00ab... jendeak ez du gasna merkea soilik erosten ahal jada/ eta guk gasna merkatu aitzin esnea merke behar da\u00bb erantzun zion Sarasuak.\r\n\r\nTxikian saio ederrak\r\n====================\r\n\r\nBai hamarrekoan bai zortzikoan, txikian saio biziak entzun ahal izan ziren, eta irri egiteko parada ere eskaini zuten bertsoaldietan bertsolari guztiek. Zortziko txikian Odei Barroso eta Ramuntxo Christy elkarrekin aritu ziren lehenik, Odei margolariak Ramuntxoren portreta egina zuen eta honek difamazioagatik salatu nahi zuen. Ramuntxo hasi zen \u00abportreta galdegin dut ez karikatura\u00bb erranaz, eta Barrosok honela erantzun zion: \u00abBa aldea badago karikaturara/ pintzela mugitu dut huna eta hara/ barkatu lagun baina holakoa zara/ ta ez baduzu maite zure problema da\u00bb, entzulearen irri karkailak sorraraziz.\r\n\r\nBarrosok lan txukuna egin zuen saio osoan, erantzuten saiatu zen aldi oro eta anitz eskertu zuen hori entzuleak. Hamarreko txikian Colina eta Txoperenaren bertsoaldia nabarmentzekoa izan zen. Bikotea izatea suertatu zitzaien, astea lanean karraskan iragan eta Maddi Anek asteburuan kanpora atera nahi du; Sustraik aldiz, etxean gelditu. Maddi Anek honakoa erran zion: \u00abNahiz hemen gelditzea zuk duzun nahiago/ ja 5 egun etxean ditugu igaro/ kanpoan ere badira zinema ta trago/ ta egia esango dizut ezin dut gehiago/ etxetik kanpo ere mundua badago\u00bb, eta ikusgarria, Colinaren erantzuna: \u00abMaitea hori etzendun kontatu beharrik/ nahiz kanpoan badagon zinema ederrik/ nahiz ostatutan baden pizza ta pattarrik/ mundura ateratzea da alfer-alferrik/ Maddi Ane nik nahi zaitut neretzat bakarrik\u00bb.\r\n\r\nTxoperenak saio bikaina egin zuen, eta akats tekniko batzuek eragotzi zioten finalerako sailkatzea etorkizun handia duen bertsolari hendaiarrari. Kartzelako lanean ale ederrak entzun ziren, eta agian denetarik nabarmentzeko modukoak, Colinak laguna duen preso bati eskainitakoak eta Barroso eta Txoperenaren biak.\r\n\r\n",
+            "_description_rendered": "<p>Urru\u00f1ako bertsolariak eskuratu zuen lehen postua Xilaba txapelketako bigarren finalerdian. Finalerako seikotea erabakita gelditu da hortaz, eta aitzineko finalean kantatu zuten bost bertsolarirekin batera ariko da Maddi Sarasua 16 urteko Itsasuko bertsolari gaztea. </p>",
+            "description": "Urru\u00f1ako bertsolariak eskuratu zuen lehen postua Xilaba txapelketako bigarren finalerdian. Finalerako seikotea erabakita gelditu da hortaz, eta aitzineko finalean kantatu zuten bost bertsolarirekin batera ariko da Maddi Sarasua 16 urteko Itsasuko bertsolari gaztea. ",
+            "title": "Sustrai Colinaren bertsokera dotorea Donibane Garaziko finalerdian gozagai",
+            "image": "images/p050_f02.jpg",
+            "_body_rendered": "<p><img src=\"/media/adminfiles/p050_f02.jpg\" width=\"240\" height=\"116\" class=\"left\" alt=\"sustrai colina\" /></p>\n<p>Antso Azkarra izan zen Donibane Garaziko hiribilduan eliza eta gotorlekua eraikitzearen arduradun. XII.mendea zen hori, eta ordutik hona historia bizia izan du hiribildu horrek, barneko bizimoldean euskarari lotua izan delarik beti ere. Ez da handik urrun Vauban zinema, non atzo euskaraz sorturiko kopla berriak entzun ahal izan ziren, doinu eta kantaera goxoarekin gainera.</p>\n<p>Baxenabarreko hiriburuan ospatu zen Xilaba bertsolari txapelketako azken finalerdia. 300dik gora bertsozale elkartu ziren Vauban zineman, eta jadanik ezagunak dira Baionan kantatuko duten sei bertsolarien izenak, hona: Amets Arzallus, Sustrai Colina, Odei Barroso, Eneritz Zabaleta, Xumai Murua eta Maddi Sarasua. Sei horiek azaroaren 10ean ariko dira kantuan 2012ko txapelduna erabakitzeko norgehiagokan.</p>\n<p>Saioan garaile Sustrai Colina izan zen, eta bigarren postua Odei Barrosok eskuratu zuen. Hirugarren izan zen Maddi Sarasua, txapelketa honetan ezustekorik handiena eman duen bertsolari gaztea. 16 urte ditu Itsasuko neskatilak, eta lehen parte hartzea du txapelketa handian; halarik ere, finalean sartzea lortu du.</p>\n<p>Agur honekin hasi zuen saioa itsasuarrak: \u00abNahiz ta nahiago nukeen hor beheretik entzun/ zuen ilusioei nahi diet erantzun/ lagun artean gira presioa urrun/ bertso maitale gisa kantatu dezagun\u00bb. Eta argi geratu zen presiorik gabe aritu zela. Orain, agian nahiago luke finala oholtza beheretik bizitzea, baina presiorik gabe jarduten bada, etorkizun polita duen bertsolaria dela erakutsiko duela segur da.</p>\n<h1>8ko handian ale politak</h1>\n<p>Ariketa puntuagarriak zortziko handikoarekin hasi ziren. Ramuntxo Christy eta Egoitz Zelaia izan ziren lehenak kantuan, eta honela zioen gaiak: \u00abBerriki elgar ezagutu duzue, Compostelako bidean zaudete, eta Ramuntxok goiz osoan ez du hitzik egin. Ongi hasi zen Zelaia: \u00abBere jarrerak nire iritziz ez du nahi adina zentzun/ mikrofono bat jarrita ere ezingo zintudan entzun\u00bb, eta bikain erantzun zion Ramuntxok: \u00abBide hunetan gurutzatuak ta eginak gira lagun/ ezezaguna egiten baita bidean fite ezagun/ baina zu otoi isildu zite ni bakean utzi egun/ Jaungoikoarekin mintzo naiz eta nahiago dut hura entzun\u00bb. Saio polita egin zuten biek, eta domaia Egoitzek akats batzuk egin izana, biziki bertsoaldi politak osatu baitzituen.</p>\n<p>Sustrai Colina eta Maddi Sarasuak eginiko lana ere aipagarria izan zen ariketa honetan. Maddi esne lantegi bateko kudeatzaileak Sustrai laborariari erran dio esnea prezio apalagoan erosiko duela. Honela hasi zen Colina: \u00abAzken urtetan harremanetan aritu gara ni ta zu/ ta prezioa jaisten joan da krisia zen amenazu/ ta gaur esnea uraren pare erosi nahia daukazu/ ta hurrengoan nik ordaintzea eskatuko al didazu?\u00bb eta \u00ab... jendeak ez du gasna merkea soilik erosten ahal jada/ eta guk gasna merkatu aitzin esnea merke behar da\u00bb erantzun zion Sarasuak.</p>\n<h1>Txikian saio ederrak</h1>\n<p>Bai hamarrekoan bai zortzikoan, txikian saio biziak entzun ahal izan ziren, eta irri egiteko parada ere eskaini zuten bertsoaldietan bertsolari guztiek. Zortziko txikian Odei Barroso eta Ramuntxo Christy elkarrekin aritu ziren lehenik, Odei margolariak Ramuntxoren portreta egina zuen eta honek difamazioagatik salatu nahi zuen. Ramuntxo hasi zen \u00abportreta galdegin dut ez karikatura\u00bb erranaz, eta Barrosok honela erantzun zion: \u00abBa aldea badago karikaturara/ pintzela mugitu dut huna eta hara/ barkatu lagun baina holakoa zara/ ta ez baduzu maite zure problema da\u00bb, entzulearen irri karkailak sorraraziz.</p>\n<p>Barrosok lan txukuna egin zuen saio osoan, erantzuten saiatu zen aldi oro eta anitz eskertu zuen hori entzuleak. Hamarreko txikian Colina eta Txoperenaren bertsoaldia nabarmentzekoa izan zen. Bikotea izatea suertatu zitzaien, astea lanean karraskan iragan eta Maddi Anek asteburuan kanpora atera nahi du; Sustraik aldiz, etxean gelditu. Maddi Anek honakoa erran zion: \u00abNahiz hemen gelditzea zuk duzun nahiago/ ja 5 egun etxean ditugu igaro/ kanpoan ere badira zinema ta trago/ ta egia esango dizut ezin dut gehiago/ etxetik kanpo ere mundua badago\u00bb, eta ikusgarria, Colinaren erantzuna: \u00abMaitea hori etzendun kontatu beharrik/ nahiz kanpoan badagon zinema ederrik/ nahiz ostatutan baden pizza ta pattarrik/ mundura ateratzea da alfer-alferrik/ Maddi Ane nik nahi zaitut neretzat bakarrik\u00bb.</p>\n<p>Txoperenak saio bikaina egin zuen, eta akats tekniko batzuek eragotzi zioten finalerako sailkatzea etorkizun handia duen bertsolari hendaiarrari. Kartzelako lanean ale ederrak entzun ziren, eta agian denetarik nabarmentzeko modukoak, Colinak laguna duen preso bati eskainitakoak eta Barroso eta Txoperenaren biak.</p>",
+            "pub_date": "2012-10-28T23:12:14",
+            "slug": "sustrai-colinaren-bertsokera-dotorea-donibane-gara",
+            "categories": [
+                2,
+                3
+            ]
+        }
+    },
+    {
+        "pk": 1,
+        "model": "articles.article",
+        "fields": {
+            "body": "El marco en el que se desarrolla la sucesi\u00f3n de legislaturas en el poder siempre es el mismo: pueblos peque\u00f1os, de menos de mil habitantes la mayor\u00eda, con poblaci\u00f3n muy dispersa y envejecida. Municipios en los que todos se conocen, se crean alianzas o enemistades. Donde la informaci\u00f3n y las nuevas ideas no llega de la misma manera que en las grandes ciudades. Donde no se hace campa\u00f1a electoral, ni m\u00edtines ni carteles, y donde las personas no votan ni a un programa electoral ni a un partido pol\u00edtico, sino a una familia.\r\n\r\n<<<jaten:class=right>>>\r\n<<<mobida:class=right>>>\r\n<<<amona:class=right>>>\r\n<<<taberna:class=right>>>\r\n\r\nEs el caso de Ramir\u00e1s, una poblaci\u00f3n ourensana donde su alcaldesa lleva desde 1975 en el poder. \u00abNunca me interes\u00f3 la pol\u00edtica, acced\u00ed al cargo m\u00e1s que nada para suceder a mi hermano\u00bb, confiesa Pilar Otilia L\u00f3pez  impasible cuando se le pregunta sobre qu\u00e9 siente al ser la mujer que m\u00e1s tiempo lleva al cargo de un ayuntamiento en el Estado espa\u00f1ol. Aunque ella reconoce que fue un gui\u00f1o del gobernador de turno a la familia L\u00f3pez, esto no explica el porqu\u00e9 en las siguientes elecciones obtuvo una y otra vez mayor\u00edas absolutas con el PP.\r\n\r\nXos\u00e9 Manuel Mendez Gayo, l\u00edder del BNG en Ramir\u00e1s, da una de las claves para entender: \u00abEllos juegan con el factor miedo: si te presentas con otra candidatura te apagan la farola de enfrente de tu casa, si criticas su gesti\u00f3n ya no te contratan para limpiar el monte o incluso algunos ancianos creen que si do\u00f1a Pilar no sale, les quitar\u00e1n su pensi\u00f3n\u00bb. Otro de los integrantes de la formaci\u00f3n a\u00f1ade que hubo muchas denuncias porque a los ancianos de la residencia del municipio les llevaban a votar y les cambiaban la papeleta del sobre por una del PP y que esos d\u00edas acuden muchas personas empadronadas en el pueblo que ni si quiera viven en el Estado porque les han prometido que si votan por el partido de L\u00f3pez, seguir\u00e1n recibiendo ayudas y pensiones no contributivas. Ante estas acusaciones, la alcaldesa solo responde que \u00abeso es porque las cosas est\u00e1n revueltas en general\u00bb y que \u00abno le preocupa ninguna de las acusaciones\u00bb.\r\n\r\nOtro alcalde al que tampoco le quita el sue\u00f1o las denuncias de la oposici\u00f3n es el de Beade. Sen\u00e9n Pousa, que lleva en el cargo imbatible desde 1974, es conocido en la provincia de Ourense por una misa que hace anualmente a Franco, por el \u00abCara al sol\u00bb que lleva como tono de m\u00f3vil y por llevar la contraria a la evoluci\u00f3n del mundo en los 80 cambiando el nombre de la v\u00eda principal por el de calle del Caudillo. Ley de Memoria Hist\u00f3rica a parte, los socialistas del municipio se quejan de que el alcalde no convoca plenos, no les cede espacios p\u00fablicos sin uso para m\u00edtines y que considera la instalaciones p\u00fablicas como propias. \u00abNo le deja la llave del polideportivo a nadie, se est\u00e1 pudriendo\u00bb, asegura Miguel \u00c1ngel Carreiro, secretario general del PSdeG en Beade. Desde la agrupaci\u00f3n se pide que se limite el mandato a dos legislaturas para evitar que se perpet\u00fae en el poder. \u00abEs una cuesti\u00f3n m\u00e1s de familia que de partido. Si ma\u00f1ana Pousa se presenta por Falange, todo el mundo le votar\u00eda igual\u00bb, asegura Carreiro, que insiste en que la sucesi\u00f3n est\u00e1 m\u00e1s que asegurada: el primer teniente de alcalde es su hermano y la segunda teniente de alcalde su nieta.\r\n\r\nLa poblaci\u00f3n en el exterior, clave\r\n==================================\r\n\r\nAunque parezca una situaci\u00f3n muy concreta, no hace sino repetirse por toda Galicia. De hecho, una cuarta parte de todas las personas empadronadas en el Estado espa\u00f1ol que viven fuera, 380.000, est\u00e1n inscritas en municipios gallegos. Entre ellos destaca Os Blancos, en Ourense. Se hizo famoso a primeros de a\u00f1o al ser uno de los municipios gallegos que primero pidi\u00f3 ser rescatado por la Xunta y por l\u00edos de censo en las elecciones de 2011. Dice un dicho popular, que en Galicia votan hasta los alcaldes.\r\n\r\nEl actual alcalde, Jos\u00e9 Manuel Castro, se present\u00f3 como independiente en las \u00faltimas votaciones por problemas en su antiguo partido, el PP. En el recuento de una de las mesas se perdieron votos, por lo que se anularon los resultados y el desempate entre Alternativa Popular Gallega de Castro y sus antiguos compa\u00f1eros tuvo que hacerse coincidiendo con las generales del 20 de octubre. Pasada la tormenta, Castro -que venci\u00f3 en ese duelo de orgullos- reconoce que actualmente trabaja con los populares \u00abcomo si nunca se hubieran dividido\u00bb.\r\n\r\nAunque la concordia reine en el concello de Os Blancos -situado en la r\u00faa de J.L. Baltar-, sus habitantes no se olvidan de la deuda. Una deuda que alcanz\u00f3 en mayo los tres millones de euros y que hizo peligrar las n\u00f3minas de los trabajadores municipales y que el regidor rogara desesperadamente a sus vecinos que se empadronaran en el municipio para evitar su fusi\u00f3n con otro.\r\n\r\n\u00abAhora estamos aguantando. Esperamos que Feij\u00f3o vuelva a confirmarse como presidente de Galicia para que la ayuda a nuestro concello se mantenga\u00bb, indic\u00f3 Castro a este medio la semana previa a las elecciones auton\u00f3micas.\r\n\r\nEsta situaci\u00f3n, donde un alcalde popular crecido por el respaldo de sus vecinos planta cara a G\u00e9nova, es m\u00e1s habitual de lo que se cree. Y si no que se lo pregunten al alcalde de Negreira, A Coru\u00f1a, Jos\u00e9 Blanco Pazos, donde el PP quiso retirarlo por su avanzada edad en 2007 y lejos de conformarse mont\u00f3 su propia formaci\u00f3n: el Partido Blanco de Negreira. \u00abYo form\u00e9 Alianza Popular en esta comarca, estuve en el Senado, homenajeaba a Fraga. Tengo mucho amor propio y si me present\u00e9 fue por dignidad\u00bb, reflexiona el alcalde, que reconoce que en el d\u00eda a d\u00eda PNB y PP funcionan como una \u00fanica formaci\u00f3n. Atr\u00e1s quedan dudosas licencias, asignaciones a dedo y el esc\u00e1ndalo de los m\u00edtines con comida pagados por el alcalde.\r\n\r\n\u00abLos que malgastaron el dinero p\u00fablico fueron los socialistas entre 2007 y 2011, en comilonas y fiestas. A mi me acusan, pero ese dinero era m\u00edo. Yo he gastado mucho dinero en pol\u00edtica\u00bb, dice en voz bien alta el alcalde de Negreira, sin decir lo que ha ganado en tantos a\u00f1os en el poder.\r\n\r\n  \r\n\r\nRompiendo t\u00f3picos\r\n=================\r\n\r\nAl norte, en Lugo, encontramos un alcalde at\u00edpico. No se apellida ni Varela, ni Otero ni Pi\u00f1eira. Se llama Isaam Alnagm. Es sirio, m\u00e9dico y lleva m\u00e1s de cuarenta a\u00f1os en Galicia. Se integr\u00f3 tan r\u00e1pido en la peque\u00f1a localidad de Muras que lleva 21 a\u00f1os en el poder. Y en el PP, pese a haber sido cr\u00edtico con Jos\u00e9 Mar\u00eda Aznar en el inicio de la guerra de Irak. \u00abFeij\u00f3o vot\u00f3 por primera vez a Felipe Gonz\u00e1lez y nadie se lo echa en cara\u00bb, explica el regidor con una media sonrisa. Cuando se le pregunta por sus cualidades para ser reafirmado en el cargo una y otra vez, responde \u00abtrabajo bien y no miento a nadie\u00bb. Como otros regidores que se perpet\u00faan en el cargo, recuerda con gratitud los tiempos de Fraga y presume que en Muras no hay paro. \u00abLa tasa de desempleo es del tres o cuatro por ciento y muchos est\u00e1n as\u00ed porque no quieren trabajar\u00bb, indica. De lo que no se habla en el pueblo es de la Aldea Etnogr\u00e1fica. Un proyecto fara\u00f3nico con una inversi\u00f3n de 2.279.744 de euros que se construir\u00e1, casualmente, en unos terrenos de la familia Alnagm. As\u00ed, el propio Ayuntamiento compr\u00f3 al propio alcalde terrenos por valor de 220.000 euros.\r\n\r\nAunque el mapa que qued\u00f3 tras las elecciones auton\u00f3micas del pasado domingo sit\u00faa pr\u00e1cticamente a toda Galicia azul, quedan trece municipios que se resisten a cambiar de color. Feudos nacionalistas como Vilar de Santos o Allariz, o el Ayuntamiento socialista de Dumbr\u00eda. Precisamente en este municipio de A Coru\u00f1a encontramos otro de los regidores que m\u00e1s se resisten a relevar el bast\u00f3n de alcalde. Jos\u00e9 Manuel Peque\u00f1o, del PSOE, lleva desde 1983 en el cargo. Tiempo en el que le ha dado tiempo a acumular denuncias de bares ilegales, tratos de favor y hasta una acusaci\u00f3n de amenaza contra un edil popular. \u00c9l ha visto c\u00f3mo los votos al partido socialista pasaban de 1.072 en las municipales de 2009 a los 788 que consigui\u00f3 el 21 de octubre. Una bajada de apoyos nada ajena al PP, con la diferencia de que ellos a menos votos m\u00e1s representaci\u00f3n han obtenido en el Parlamento Gallego. Cosas de la Ley d'Hondt, se supone.\r\n",
+            "_description_rendered": "<p>Cuando se pronuncia la palabra caciquismo en Galicia, una sonrisa aflora en la cara de sus habitantes. Una mueca de complicidad, de secreto a voces y de \u00absi yo te contara\u00bb. No se podr\u00eda esperar otra cosa de una comunidad donde hay muchos alcaldes que llevan en su cargo m\u00e1s tiempo que la propia democracia. Esto en s\u00ed mismo, que sean votados y elegidos una y otra vez, deber\u00eda ser motivo de orgullo, pero no siempre lo es.</p>",
+            "description": "Cuando se pronuncia la palabra caciquismo en Galicia, una sonrisa aflora en la cara de sus habitantes. Una mueca de complicidad, de secreto a voces y de \u00absi yo te contara\u00bb. No se podr\u00eda esperar otra cosa de una comunidad donde hay muchos alcaldes que llevan en su cargo m\u00e1s tiempo que la propia democracia. Esto en s\u00ed mismo, que sean votados y elegidos una y otra vez, deber\u00eda ser motivo de orgullo, pero no siempre lo es.",
+            "title": "El poder del miedo en los pueblos gallegos",
+            "image": "images/p006_f01.jpg",
+            "_body_rendered": "<p>El marco en el que se desarrolla la sucesi\u00f3n de legislaturas en el poder siempre es el mismo: pueblos peque\u00f1os, de menos de mil habitantes la mayor\u00eda, con poblaci\u00f3n muy dispersa y envejecida. Municipios en los que todos se conocen, se crean alianzas o enemistades. Donde la informaci\u00f3n y las nuevas ideas no llega de la misma manera que en las grandes ciudades. Donde no se hace campa\u00f1a electoral, ni m\u00edtines ni carteles, y donde las personas no votan ni a un programa electoral ni a un partido pol\u00edtico, sino a una familia.</p>\n<p><img src=\"/media/adminfiles/p006_f04.jpg\" width=\"240\" height=\"165\" class=\"right\" alt=\"jaten\" /></p>\n<p><img src=\"/media/adminfiles/p006_f03.jpg\" width=\"240\" height=\"123\" class=\"right\" alt=\"mobida\" /></p>\n<p><img src=\"/media/adminfiles/p006_f02.jpg\" width=\"240\" height=\"138\" class=\"right\" alt=\"amona\" /></p>\n<p><img src=\"/media/adminfiles/p006_f01.jpg\" width=\"240\" height=\"138\" class=\"right\" alt=\"taberna\" /></p>\n<p>Es el caso de Ramir\u00e1s, una poblaci\u00f3n ourensana donde su alcaldesa lleva desde 1975 en el poder. \u00abNunca me interes\u00f3 la pol\u00edtica, acced\u00ed al cargo m\u00e1s que nada para suceder a mi hermano\u00bb, confiesa Pilar Otilia L\u00f3pez  impasible cuando se le pregunta sobre qu\u00e9 siente al ser la mujer que m\u00e1s tiempo lleva al cargo de un ayuntamiento en el Estado espa\u00f1ol. Aunque ella reconoce que fue un gui\u00f1o del gobernador de turno a la familia L\u00f3pez, esto no explica el porqu\u00e9 en las siguientes elecciones obtuvo una y otra vez mayor\u00edas absolutas con el PP.</p>\n<p>Xos\u00e9 Manuel Mendez Gayo, l\u00edder del BNG en Ramir\u00e1s, da una de las claves para entender: \u00abEllos juegan con el factor miedo: si te presentas con otra candidatura te apagan la farola de enfrente de tu casa, si criticas su gesti\u00f3n ya no te contratan para limpiar el monte o incluso algunos ancianos creen que si do\u00f1a Pilar no sale, les quitar\u00e1n su pensi\u00f3n\u00bb. Otro de los integrantes de la formaci\u00f3n a\u00f1ade que hubo muchas denuncias porque a los ancianos de la residencia del municipio les llevaban a votar y les cambiaban la papeleta del sobre por una del PP y que esos d\u00edas acuden muchas personas empadronadas en el pueblo que ni si quiera viven en el Estado porque les han prometido que si votan por el partido de L\u00f3pez, seguir\u00e1n recibiendo ayudas y pensiones no contributivas. Ante estas acusaciones, la alcaldesa solo responde que \u00abeso es porque las cosas est\u00e1n revueltas en general\u00bb y que \u00abno le preocupa ninguna de las acusaciones\u00bb.</p>\n<p>Otro alcalde al que tampoco le quita el sue\u00f1o las denuncias de la oposici\u00f3n es el de Beade. Sen\u00e9n Pousa, que lleva en el cargo imbatible desde 1974, es conocido en la provincia de Ourense por una misa que hace anualmente a Franco, por el \u00abCara al sol\u00bb que lleva como tono de m\u00f3vil y por llevar la contraria a la evoluci\u00f3n del mundo en los 80 cambiando el nombre de la v\u00eda principal por el de calle del Caudillo. Ley de Memoria Hist\u00f3rica a parte, los socialistas del municipio se quejan de que el alcalde no convoca plenos, no les cede espacios p\u00fablicos sin uso para m\u00edtines y que considera la instalaciones p\u00fablicas como propias. \u00abNo le deja la llave del polideportivo a nadie, se est\u00e1 pudriendo\u00bb, asegura Miguel \u00c1ngel Carreiro, secretario general del PSdeG en Beade. Desde la agrupaci\u00f3n se pide que se limite el mandato a dos legislaturas para evitar que se perpet\u00fae en el poder. \u00abEs una cuesti\u00f3n m\u00e1s de familia que de partido. Si ma\u00f1ana Pousa se presenta por Falange, todo el mundo le votar\u00eda igual\u00bb, asegura Carreiro, que insiste en que la sucesi\u00f3n est\u00e1 m\u00e1s que asegurada: el primer teniente de alcalde es su hermano y la segunda teniente de alcalde su nieta.</p>\n<h1>La poblaci\u00f3n en el exterior, clave</h1>\n<p>Aunque parezca una situaci\u00f3n muy concreta, no hace sino repetirse por toda Galicia. De hecho, una cuarta parte de todas las personas empadronadas en el Estado espa\u00f1ol que viven fuera, 380.000, est\u00e1n inscritas en municipios gallegos. Entre ellos destaca Os Blancos, en Ourense. Se hizo famoso a primeros de a\u00f1o al ser uno de los municipios gallegos que primero pidi\u00f3 ser rescatado por la Xunta y por l\u00edos de censo en las elecciones de 2011. Dice un dicho popular, que en Galicia votan hasta los alcaldes.</p>\n<p>El actual alcalde, Jos\u00e9 Manuel Castro, se present\u00f3 como independiente en las \u00faltimas votaciones por problemas en su antiguo partido, el PP. En el recuento de una de las mesas se perdieron votos, por lo que se anularon los resultados y el desempate entre Alternativa Popular Gallega de Castro y sus antiguos compa\u00f1eros tuvo que hacerse coincidiendo con las generales del 20 de octubre. Pasada la tormenta, Castro -que venci\u00f3 en ese duelo de orgullos- reconoce que actualmente trabaja con los populares \u00abcomo si nunca se hubieran dividido\u00bb.</p>\n<p>Aunque la concordia reine en el concello de Os Blancos -situado en la r\u00faa de J.L. Baltar-, sus habitantes no se olvidan de la deuda. Una deuda que alcanz\u00f3 en mayo los tres millones de euros y que hizo peligrar las n\u00f3minas de los trabajadores municipales y que el regidor rogara desesperadamente a sus vecinos que se empadronaran en el municipio para evitar su fusi\u00f3n con otro.</p>\n<p>\u00abAhora estamos aguantando. Esperamos que Feij\u00f3o vuelva a confirmarse como presidente de Galicia para que la ayuda a nuestro concello se mantenga\u00bb, indic\u00f3 Castro a este medio la semana previa a las elecciones auton\u00f3micas.</p>\n<p>Esta situaci\u00f3n, donde un alcalde popular crecido por el respaldo de sus vecinos planta cara a G\u00e9nova, es m\u00e1s habitual de lo que se cree. Y si no que se lo pregunten al alcalde de Negreira, A Coru\u00f1a, Jos\u00e9 Blanco Pazos, donde el PP quiso retirarlo por su avanzada edad en 2007 y lejos de conformarse mont\u00f3 su propia formaci\u00f3n: el Partido Blanco de Negreira. \u00abYo form\u00e9 Alianza Popular en esta comarca, estuve en el Senado, homenajeaba a Fraga. Tengo mucho amor propio y si me present\u00e9 fue por dignidad\u00bb, reflexiona el alcalde, que reconoce que en el d\u00eda a d\u00eda PNB y PP funcionan como una \u00fanica formaci\u00f3n. Atr\u00e1s quedan dudosas licencias, asignaciones a dedo y el esc\u00e1ndalo de los m\u00edtines con comida pagados por el alcalde.</p>\n<p>\u00abLos que malgastaron el dinero p\u00fablico fueron los socialistas entre 2007 y 2011, en comilonas y fiestas. A mi me acusan, pero ese dinero era m\u00edo. Yo he gastado mucho dinero en pol\u00edtica\u00bb, dice en voz bien alta el alcalde de Negreira, sin decir lo que ha ganado en tantos a\u00f1os en el poder.</p>\n<h1>Rompiendo t\u00f3picos</h1>\n<p>Al norte, en Lugo, encontramos un alcalde at\u00edpico. No se apellida ni Varela, ni Otero ni Pi\u00f1eira. Se llama Isaam Alnagm. Es sirio, m\u00e9dico y lleva m\u00e1s de cuarenta a\u00f1os en Galicia. Se integr\u00f3 tan r\u00e1pido en la peque\u00f1a localidad de Muras que lleva 21 a\u00f1os en el poder. Y en el PP, pese a haber sido cr\u00edtico con Jos\u00e9 Mar\u00eda Aznar en el inicio de la guerra de Irak. \u00abFeij\u00f3o vot\u00f3 por primera vez a Felipe Gonz\u00e1lez y nadie se lo echa en cara\u00bb, explica el regidor con una media sonrisa. Cuando se le pregunta por sus cualidades para ser reafirmado en el cargo una y otra vez, responde \u00abtrabajo bien y no miento a nadie\u00bb. Como otros regidores que se perpet\u00faan en el cargo, recuerda con gratitud los tiempos de Fraga y presume que en Muras no hay paro. \u00abLa tasa de desempleo es del tres o cuatro por ciento y muchos est\u00e1n as\u00ed porque no quieren trabajar\u00bb, indica. De lo que no se habla en el pueblo es de la Aldea Etnogr\u00e1fica. Un proyecto fara\u00f3nico con una inversi\u00f3n de 2.279.744 de euros que se construir\u00e1, casualmente, en unos terrenos de la familia Alnagm. As\u00ed, el propio Ayuntamiento compr\u00f3 al propio alcalde terrenos por valor de 220.000 euros.</p>\n<p>Aunque el mapa que qued\u00f3 tras las elecciones auton\u00f3micas del pasado domingo sit\u00faa pr\u00e1cticamente a toda Galicia azul, quedan trece municipios que se resisten a cambiar de color. Feudos nacionalistas como Vilar de Santos o Allariz, o el Ayuntamiento socialista de Dumbr\u00eda. Precisamente en este municipio de A Coru\u00f1a encontramos otro de los regidores que m\u00e1s se resisten a relevar el bast\u00f3n de alcalde. Jos\u00e9 Manuel Peque\u00f1o, del PSOE, lleva desde 1983 en el cargo. Tiempo en el que le ha dado tiempo a acumular denuncias de bares ilegales, tratos de favor y hasta una acusaci\u00f3n de amenaza contra un edil popular. \u00c9l ha visto c\u00f3mo los votos al partido socialista pasaban de 1.072 en las municipales de 2009 a los 788 que consigui\u00f3 el 21 de octubre. Una bajada de apoyos nada ajena al PP, con la diferencia de que ellos a menos votos m\u00e1s representaci\u00f3n han obtenido en el Parlamento Gallego. Cosas de la Ley d'Hondt, se supone.</p>",
+            "pub_date": "2012-10-28T23:07:44",
+            "slug": "el-poder-del-miedo-en-los-pueblos-gallegos",
+            "categories": [
+                1,
+                2
+            ]
+        }
+    },
+    {
+        "pk": 1,
+        "model": "feeds.feed",
+        "fields": {
+            "url": "http://gara.naiz.info/rss/azkenak",
+            "quantity": 5
+        }
+    },
+    {
+        "pk": 2,
+        "model": "feeds.feed",
+        "fields": {
+            "url": "http://berria.info/rss/ediziojarraia.xml",
+            "quantity": 5
+        }
+    },
+    {
+        "pk": 1,
+        "model": "flat.flatpage",
+        "fields": {
+            "position": 0,
+            "text": "Zer da\r\n======\r\n\r\nBehe bidasoa eskualdean, euskarazko komunikabideak sustatzeko elkartea da, honekin batera, herri komunikazioarekin loturik dauden ildo ezberdinak zabaltzeko gunea dugu pausumedia.\r\n\r\n\r\nHelburuak\r\n---------\r\n\r\n    Behe bidasoa eskualdean euskararen normalizazioa, esparru komunikatiboan.\r\n    Herri komunikazioaren indartzea eskualdean.\r\n    Euskarazko hedabideen gizarteratzea\r\n    Kulturaniztasuna bultzatu eta euskararen aldeko jarrera positiboak sustazea.\r\n\r\nElkartearen egitura\r\n-------------------\r\n\r\n    - Pausumedia elkartea, erakunde independientea da.\r\n    - Bere administrazio kontseilu propioa du.\r\n    - Administrazio kontseilua, ildo ezberdinetako arduradunak osatzen dute.\r\n\r\nSustatutako proiektuak\r\n----------------------\r\n\r\n    - Euskarazko irratigintza: Antxeta Irratia\r\n    - Euskarazko prentsa digitala: Bidasoamedia.info\r\n    - Euskarazko prentsa idatzia: Bidasoako HITZA.\r\n    - Euskarazko telebista: Oarso bidasoako HAMAIKA telebista.\r\n    - Irrati tailerrak: Hendaia, Irun eta Hondarribiko hezkuntza zentroetan euskarazko irrati tailerrak (2003tik)\r\n    - Irrati tailer interkulturalak: CEPA ( helduen hezkuntza zentroa 2006), Adiskidetuak elkartearekin ( uhinak koloretan irrati tailerra 2006)\r\n    - Emankizun interkulturalak: \u201c irun europako atea\u201d ( 2003tik)\r\n    - Kooperazio proiektuak: \u201c bidasoa-quito \u201c, adiskidetuak (etorkinen elkartearekin)\r\n    - Emakume ildoa: AIZAN,emakume etorkinek hitza hartzen dute (2008)\r\n    - Lankidetza komunikatiboa: \"Radio Escuela 2009\", Txile,Peru,Argentina\r\n    - Behe Bidasoako HITZA egunkaria, (2008)\r\n    - Kazetari.net: euskaraz ekoiztutako berrien topalekua, (2008)\r\n    - Pausuirratia.net: Behe Bidasoako euskarazko web irratia (2009)\r\n    - haurtxoko irratia: irungo ludoteketan irrati tailerrak (2010)\r\n    - uhinbak aplikazioa: euskarazko irrati streamingnak telefonoetarako aplikazioa (2010)\r\n    - Txileko O\u00b4Higins eskualdea 7 irratien eraikitzea (2010)\r\n    - e- makume etorkinei zuzendutako irrati tailerrak: adiskidetuak elkartearekin (2010)\r\n    - herrihotsak.info: bidasoa eskualdeko elkarteen irratsaioa (2010)",
+            "slug": "aurkezpena",
+            "_text_rendered": "<h1>Zer da</h1>\n<p>Behe bidasoa eskualdean, euskarazko komunikabideak sustatzeko elkartea da, honekin batera, herri komunikazioarekin loturik dauden ildo ezberdinak zabaltzeko gunea dugu pausumedia.</p>\n<h2>Helburuak</h2>\n<pre><code>Behe bidasoa eskualdean euskararen normalizazioa, esparru komunikatiboan.\nHerri komunikazioaren indartzea eskualdean.\nEuskarazko hedabideen gizarteratzea\nKulturaniztasuna bultzatu eta euskararen aldeko jarrera positiboak sustazea.\n</code></pre>\n<h2>Elkartearen egitura</h2>\n<pre><code>- Pausumedia elkartea, erakunde independientea da.\n- Bere administrazio kontseilu propioa du.\n- Administrazio kontseilua, ildo ezberdinetako arduradunak osatzen dute.\n</code></pre>\n<h2>Sustatutako proiektuak</h2>\n<pre><code>- Euskarazko irratigintza: Antxeta Irratia\n- Euskarazko prentsa digitala: Bidasoamedia.info\n- Euskarazko prentsa idatzia: Bidasoako HITZA.\n- Euskarazko telebista: Oarso bidasoako HAMAIKA telebista.\n- Irrati tailerrak: Hendaia, Irun eta Hondarribiko hezkuntza zentroetan euskarazko irrati tailerrak (2003tik)\n- Irrati tailer interkulturalak: CEPA ( helduen hezkuntza zentroa 2006), Adiskidetuak elkartearekin ( uhinak koloretan irrati tailerra 2006)\n- Emankizun interkulturalak: \u201c irun europako atea\u201d ( 2003tik)\n- Kooperazio proiektuak: \u201c bidasoa-quito \u201c, adiskidetuak (etorkinen elkartearekin)\n- Emakume ildoa: AIZAN,emakume etorkinek hitza hartzen dute (2008)\n- Lankidetza komunikatiboa: \"Radio Escuela 2009\", Txile,Peru,Argentina\n- Behe Bidasoako HITZA egunkaria, (2008)\n- Kazetari.net: euskaraz ekoiztutako berrien topalekua, (2008)\n- Pausuirratia.net: Behe Bidasoako euskarazko web irratia (2009)\n- haurtxoko irratia: irungo ludoteketan irrati tailerrak (2010)\n- uhinbak aplikazioa: euskarazko irrati streamingnak telefonoetarako aplikazioa (2010)\n- Txileko O\u00b4Higins eskualdea 7 irratien eraikitzea (2010)\n- e- makume etorkinei zuzendutako irrati tailerrak: adiskidetuak elkartearekin (2010)\n- herrihotsak.info: bidasoa eskualdeko elkarteen irratsaioa (2010)\n</code></pre>",
+            "title": "Aurkezpena"
+        }
+    },
+    {
+        "pk": 40,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_logentry",
+            "name": "Can add log entry",
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 41,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_logentry",
+            "name": "Can change log entry",
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 42,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_logentry",
+            "name": "Can delete log entry",
+            "content_type": 14
+        }
+    },
+    {
+        "pk": 22,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_fileupload",
+            "name": "Can add file upload",
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 24,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_fileupload",
+            "name": "Can change file upload",
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 26,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_fileupload",
+            "name": "Can delete file upload",
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 23,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_fileuploadreference",
+            "name": "Can add file upload reference",
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 25,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_fileuploadreference",
+            "name": "Can change file upload reference",
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 27,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_fileuploadreference",
+            "name": "Can delete file upload reference",
+            "content_type": 9
+        }
+    },
+    {
+        "pk": 43,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_article",
+            "name": "Can add Article",
+            "content_type": 16
+        }
+    },
+    {
+        "pk": 45,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_article",
+            "name": "Can change Article",
+            "content_type": 16
+        }
+    },
+    {
+        "pk": 47,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_article",
+            "name": "Can delete Article",
+            "content_type": 16
+        }
+    },
+    {
+        "pk": 44,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_category",
+            "name": "Can add Category",
+            "content_type": 15
+        }
+    },
+    {
+        "pk": 46,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_category",
+            "name": "Can change Category",
+            "content_type": 15
+        }
+    },
+    {
+        "pk": 48,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_category",
+            "name": "Can delete Category",
+            "content_type": 15
+        }
+    },
+    {
+        "pk": 1,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_group",
+            "name": "Can add group",
+            "content_type": 2
+        }
+    },
+    {
+        "pk": 4,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_group",
+            "name": "Can change group",
+            "content_type": 2
+        }
+    },
+    {
+        "pk": 7,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_group",
+            "name": "Can delete group",
+            "content_type": 2
+        }
+    },
+    {
+        "pk": 2,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_permission",
+            "name": "Can add permission",
+            "content_type": 1
+        }
+    },
+    {
+        "pk": 5,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_permission",
+            "name": "Can change permission",
+            "content_type": 1
+        }
+    },
+    {
+        "pk": 8,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_permission",
+            "name": "Can delete permission",
+            "content_type": 1
+        }
+    },
+    {
+        "pk": 3,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_user",
+            "name": "Can add user",
+            "content_type": 3
+        }
+    },
+    {
+        "pk": 6,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_user",
+            "name": "Can change user",
+            "content_type": 3
+        }
+    },
+    {
+        "pk": 9,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_user",
+            "name": "Can delete user",
+            "content_type": 3
+        }
+    },
+    {
+        "pk": 10,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_contenttype",
+            "name": "Can add content type",
+            "content_type": 4
+        }
+    },
+    {
+        "pk": 11,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_contenttype",
+            "name": "Can change content type",
+            "content_type": 4
+        }
+    },
+    {
+        "pk": 12,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_contenttype",
+            "name": "Can delete content type",
+            "content_type": 4
+        }
+    },
+    {
+        "pk": 64,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_crontabschedule",
+            "name": "Can add crontab",
+            "content_type": 25
+        }
+    },
+    {
+        "pk": 72,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_crontabschedule",
+            "name": "Can change crontab",
+            "content_type": 25
+        }
+    },
+    {
+        "pk": 80,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_crontabschedule",
+            "name": "Can delete crontab",
+            "content_type": 25
+        }
+    },
+    {
+        "pk": 65,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_intervalschedule",
+            "name": "Can add interval",
+            "content_type": 24
+        }
+    },
+    {
+        "pk": 73,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_intervalschedule",
+            "name": "Can change interval",
+            "content_type": 24
+        }
+    },
+    {
+        "pk": 81,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_intervalschedule",
+            "name": "Can delete interval",
+            "content_type": 24
+        }
+    },
+    {
+        "pk": 66,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_periodictask",
+            "name": "Can add periodic task",
+            "content_type": 27
+        }
+    },
+    {
+        "pk": 74,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_periodictask",
+            "name": "Can change periodic task",
+            "content_type": 27
+        }
+    },
+    {
+        "pk": 82,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_periodictask",
+            "name": "Can delete periodic task",
+            "content_type": 27
+        }
+    },
+    {
+        "pk": 67,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_periodictasks",
+            "name": "Can add periodic tasks",
+            "content_type": 26
+        }
+    },
+    {
+        "pk": 75,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_periodictasks",
+            "name": "Can change periodic tasks",
+            "content_type": 26
+        }
+    },
+    {
+        "pk": 83,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_periodictasks",
+            "name": "Can delete periodic tasks",
+            "content_type": 26
+        }
+    },
+    {
+        "pk": 69,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_taskmeta",
+            "name": "Can add task meta",
+            "content_type": 22
+        }
+    },
+    {
+        "pk": 77,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_taskmeta",
+            "name": "Can change task meta",
+            "content_type": 22
+        }
+    },
+    {
+        "pk": 85,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_taskmeta",
+            "name": "Can delete task meta",
+            "content_type": 22
+        }
+    },
+    {
+        "pk": 70,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_tasksetmeta",
+            "name": "Can add taskset meta",
+            "content_type": 23
+        }
+    },
+    {
+        "pk": 78,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_tasksetmeta",
+            "name": "Can change taskset meta",
+            "content_type": 23
+        }
+    },
+    {
+        "pk": 86,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_tasksetmeta",
+            "name": "Can delete taskset meta",
+            "content_type": 23
+        }
+    },
+    {
+        "pk": 68,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_taskstate",
+            "name": "Can add task",
+            "content_type": 29
+        }
+    },
+    {
+        "pk": 76,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_taskstate",
+            "name": "Can change task",
+            "content_type": 29
+        }
+    },
+    {
+        "pk": 84,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_taskstate",
+            "name": "Can delete task",
+            "content_type": 29
+        }
+    },
+    {
+        "pk": 71,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_workerstate",
+            "name": "Can add worker",
+            "content_type": 28
+        }
+    },
+    {
+        "pk": 79,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_workerstate",
+            "name": "Can change worker",
+            "content_type": 28
+        }
+    },
+    {
+        "pk": 87,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_workerstate",
+            "name": "Can delete worker",
+            "content_type": 28
+        }
+    },
+    {
+        "pk": 31,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_feedback",
+            "name": "Can add feedback",
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 32,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_feedback",
+            "name": "Can change feedback",
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 33,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_feedback",
+            "name": "Can delete feedback",
+            "content_type": 11
+        }
+    },
+    {
+        "pk": 49,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_feed",
+            "name": "Can add Feed",
+            "content_type": 17
+        }
+    },
+    {
+        "pk": 50,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_feed",
+            "name": "Can change Feed",
+            "content_type": 17
+        }
+    },
+    {
+        "pk": 51,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_feed",
+            "name": "Can delete Feed",
+            "content_type": 17
+        }
+    },
+    {
+        "pk": 52,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_flatpage",
+            "name": "Can add flatpage",
+            "content_type": 18
+        }
+    },
+    {
+        "pk": 53,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_flatpage",
+            "name": "Can change flatpage",
+            "content_type": 18
+        }
+    },
+    {
+        "pk": 54,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_flatpage",
+            "name": "Can delete flatpage",
+            "content_type": 18
+        }
+    },
+    {
+        "pk": 55,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_aggregatemedia",
+            "name": "Can add aggregate media",
+            "content_type": 21
+        }
+    },
+    {
+        "pk": 58,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_aggregatemedia",
+            "name": "Can change aggregate media",
+            "content_type": 21
+        }
+    },
+    {
+        "pk": 61,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_aggregatemedia",
+            "name": "Can delete aggregate media",
+            "content_type": 21
+        }
+    },
+    {
+        "pk": 56,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_storedoembed",
+            "name": "Can add stored OEmbed",
+            "content_type": 19
+        }
+    },
+    {
+        "pk": 59,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_storedoembed",
+            "name": "Can change stored OEmbed",
+            "content_type": 19
+        }
+    },
+    {
+        "pk": 62,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_storedoembed",
+            "name": "Can delete stored OEmbed",
+            "content_type": 19
+        }
+    },
+    {
+        "pk": 57,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_storedprovider",
+            "name": "Can add stored provider",
+            "content_type": 20
+        }
+    },
+    {
+        "pk": 60,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_storedprovider",
+            "name": "Can change stored provider",
+            "content_type": 20
+        }
+    },
+    {
+        "pk": 63,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_storedprovider",
+            "name": "Can delete stored provider",
+            "content_type": 20
+        }
+    },
+    {
+        "pk": 34,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_contactpreferences",
+            "name": "Can add Contact Preferences",
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 36,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_contactpreferences",
+            "name": "Can change Contact Preferences",
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 38,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_contactpreferences",
+            "name": "Can delete Contact Preferences",
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 35,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_preferences",
+            "name": "Can add preferences",
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 37,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_preferences",
+            "name": "Can change preferences",
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 39,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_preferences",
+            "name": "Can delete preferences",
+            "content_type": 12
+        }
+    },
+    {
+        "pk": 13,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_session",
+            "name": "Can add session",
+            "content_type": 5
+        }
+    },
+    {
+        "pk": 14,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_session",
+            "name": "Can change session",
+            "content_type": 5
+        }
+    },
+    {
+        "pk": 15,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_session",
+            "name": "Can delete session",
+            "content_type": 5
+        }
+    },
+    {
+        "pk": 16,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_site",
+            "name": "Can add site",
+            "content_type": 6
+        }
+    },
+    {
+        "pk": 17,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_site",
+            "name": "Can change site",
+            "content_type": 6
+        }
+    },
+    {
+        "pk": 18,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_site",
+            "name": "Can delete site",
+            "content_type": 6
+        }
+    },
+    {
+        "pk": 19,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_migrationhistory",
+            "name": "Can add migration history",
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 20,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_migrationhistory",
+            "name": "Can change migration history",
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 21,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_migrationhistory",
+            "name": "Can delete migration history",
+            "content_type": 7
+        }
+    },
+    {
+        "pk": 28,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "add_kvstore",
+            "name": "Can add kv store",
+            "content_type": 10
+        }
+    },
+    {
+        "pk": 29,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "change_kvstore",
+            "name": "Can change kv store",
+            "content_type": 10
+        }
+    },
+    {
+        "pk": 30,
+        "model": "auth.permission",
+        "fields": {
+            "codename": "delete_kvstore",
+            "name": "Can delete kv store",
+            "content_type": 10
+        }
+    },
+    {
+        "pk": 1,
+        "model": "auth.group",
+        "fields": {
+            "name": "common",
+            "permissions": [
+                22,
+                24,
+                26,
+                23,
+                25,
+                27,
+                43,
+                45,
+                47,
+                44,
+                46,
+                48,
+                31,
+                32,
+                33,
+                49,
+                50,
+                51,
+                52,
+                53,
+                54,
+                34,
+                36,
+                38,
+                35,
+                37,
+                39
+            ]
+        }
+    },
+    {
+        "pk": 1,
+        "model": "auth.user",
+        "fields": {
+            "username": "unai",
+            "first_name": "",
+            "last_name": "",
+            "is_active": true,
+            "is_superuser": true,
+            "is_staff": true,
+            "last_login": "2012-10-28T18:19:13.123",
+            "groups": [],
+            "user_permissions": [],
+            "password": "pbkdf2_sha256$10000$YYxX6ohF4eX2$izhQTMsOnBfpIrEu3gNDmLPPSpddFVyZQELJ5/1U/jE=",
+            "email": "unai@gisa-elkartea.org",
+            "date_joined": "2012-10-28T18:17:57.450"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "auth.user",
+        "fields": {
+            "username": "aitor",
+            "first_name": "",
+            "last_name": "",
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": true,
+            "last_login": "2012-10-28T18:23:39",
+            "groups": [
+                1
+            ],
+            "user_permissions": [],
+            "password": "pbkdf2_sha256$10000$7MfKSvHEGoWM$H6rF9RQC7IZea/wJihjCOAeZnYZltQWQrmPYgRN3dZE=",
+            "email": "",
+            "date_joined": "2012-10-28T18:23:39"
+        }
+    },
+    {
+        "pk": 3,
+        "model": "auth.user",
+        "fields": {
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "is_active": true,
+            "is_superuser": true,
+            "is_staff": true,
+            "last_login": "2012-10-28T18:34:02.669",
+            "groups": [],
+            "user_permissions": [],
+            "password": "pbkdf2_sha256$10000$ffTV68LqxA6B$YhU6eoeQlRxKH9tbPcwSUA24x+j5jLNynpsu/0AA5x0=",
+            "email": "admin@admin.admin",
+            "date_joined": "2012-10-28T18:33:58.137"
+        }
+    },
+    {
+        "pk": 14,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2012-10-28T23:21:35.233",
+            "object_repr": "http://berria.info/rss/ediziojarraia.xml",
+            "object_id": "2",
+            "change_message": "",
+            "user": 3,
+            "content_type": 17
+        }
+    },
+    {
+        "pk": 13,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2012-10-28T23:20:36.294",
+            "object_repr": "http://gara.naiz.info/rss/azkenak",
+            "object_id": "1",
+            "change_message": "",
+            "user": 3,
+            "content_type": 17
+        }
+    },
+    {
+        "pk": 12,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2012-10-28T23:20:01.018",
+            "object_repr": "Contact preferences for site bidasoamedia.info.",
+            "object_id": "1",
+            "change_message": "",
+            "user": 3,
+            "content_type": 13
+        }
+    },
+    {
+        "pk": 11,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2012-10-28T23:18:37.251",
+            "object_repr": "Aurkezpena",
+            "object_id": "1",
+            "change_message": "",
+            "user": 3,
+            "content_type": 18
+        }
+    },
+    {
+        "pk": 10,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2012-10-28T23:14:35.415",
+            "object_repr": "Sustrai Colinaren bertsokera dotorea Donibane Garaziko finalerdian gozagai",
+            "object_id": "2",
+            "change_message": "",
+            "user": 3,
+            "content_type": 16
+        }
+    },
+    {
+        "pk": 9,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2012-10-28T23:14:12.042",
+            "object_repr": "sustrai colina",
+            "object_id": "5",
+            "change_message": "",
+            "user": 3,
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 8,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2012-10-28T23:12:59.340",
+            "object_repr": "kronika",
+            "object_id": "3",
+            "change_message": "",
+            "user": 3,
+            "content_type": 15
+        }
+    },
+    {
+        "pk": 7,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2012-10-28T23:12:12.727",
+            "object_repr": "El poder del miedo en los pueblos gallegos",
+            "object_id": "1",
+            "change_message": "",
+            "user": 3,
+            "content_type": 16
+        }
+    },
+    {
+        "pk": 6,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2012-10-28T23:11:23.874",
+            "object_repr": "jaten",
+            "object_id": "4",
+            "change_message": "",
+            "user": 3,
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 5,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2012-10-28T23:11:10.026",
+            "object_repr": "mobida",
+            "object_id": "3",
+            "change_message": "",
+            "user": 3,
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 4,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2012-10-28T23:10:54.345",
+            "object_repr": "amona",
+            "object_id": "2",
+            "change_message": "",
+            "user": 3,
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 3,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2012-10-28T23:10:37.712",
+            "object_repr": "taberna",
+            "object_id": "1",
+            "change_message": "",
+            "user": 3,
+            "content_type": 8
+        }
+    },
+    {
+        "pk": 2,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2012-10-28T23:08:55.714",
+            "object_repr": "gizartea",
+            "object_id": "2",
+            "change_message": "",
+            "user": 3,
+            "content_type": 15
+        }
+    },
+    {
+        "pk": 1,
+        "model": "admin.logentry",
+        "fields": {
+            "action_flag": 1,
+            "action_time": "2012-10-28T23:08:39.668",
+            "object_repr": "politika",
+            "object_id": "1",
+            "change_message": "",
+            "user": 3,
+            "content_type": 15
+        }
+    }
+]
