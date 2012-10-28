@@ -94,6 +94,7 @@ INSTALLED_APPS = (
     'feedback',
     'preferences',
     'sortable',
+    'infinite_pagination',
 
     'grappelli.dashboard',
     'grappelli',

@@ -1,5 +1,5 @@
 {% extends base %}
-{% load thumbnail %}
+{% load thumbnail infinite_pagination %}
 
 {% block articles %}
 
@@ -27,5 +27,7 @@ a
 {% endfor %}
 
 {% endfor %}
+
+{% paginate %}
 
 {% endblock articles %}
