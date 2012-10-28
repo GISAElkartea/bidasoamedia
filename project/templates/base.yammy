@@ -31,7 +31,7 @@ html
         {% block extra_headers %}{% endblock extra_headers %}
 
     body
-        {% include 'feedback/button.html' %}
+        {% include 'feedback/button.yammy' %}
         {% for category in category_list %}
         a
             - href {% url articles:category category.slug %}

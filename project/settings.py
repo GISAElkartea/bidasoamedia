@@ -68,6 +68,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.static',
     'django.core.context_processors.tz',
     'django.contrib.messages.context_processors.messages',
+    'preferences.context_processors.preferences_cp',
     'project.context_processors.ajax_template',
     'project.articles.context_processors.category_list',
     'project.feeds.context_processors.feed_list',
@@ -91,6 +92,8 @@ INSTALLED_APPS = (
     'sorl.thumbnail',
     'djcelery',
     'feedback',
+    'preferences',
+    'sortable',
 
     'grappelli.dashboard',
     'grappelli',
@@ -99,6 +102,7 @@ INSTALLED_APPS = (
     'project',
     'project.articles',
     'project.feeds',
+    'project.flat',
 )
 
 LOGGING = {
