@@ -85,6 +85,7 @@ INSTALLED_APPS = (
     'django.contrib.sitemaps',
     'django.contrib.comments',
 
+    'south',
     'adminfiles',
     'oembed',
     'markitup',
