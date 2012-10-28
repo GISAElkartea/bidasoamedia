@@ -138,6 +138,7 @@ MARKITUP_FILTER = ('project.utils.markup_filter', {})
 MARKITUP_SET = 'markitup/sets/markdown'
 MARKITUP_SKIN = 'markitup/skins/markitup'
 MARKITUP_AUTO_PREVIEW = True
+OEMBED_DEFAULT_PARSE_HTML = False
 
 SASS = os.path.join(os.path.dirname(DIR), 'bin/sass')
 COMPRESS_OUTPUT_DIR = 'cache'

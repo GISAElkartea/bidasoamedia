@@ -8,6 +8,8 @@ from django.conf.urls.static import static
 from django.contrib import admin
 admin.autodiscover()
 
+import oembed
+oembed.autodiscover()
 
 urlpatterns = patterns('',
         url(r'^$', RedirectView.as_view(url='articles')),
