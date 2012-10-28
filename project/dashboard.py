@@ -9,20 +9,47 @@ class Dashboard(Dashboard):
     def init_with_context(self, context):
         site_name = get_admin_site_name(context)
         
-        # append an app list module for "Applications"
-        self.children.append(modules.AppList(
-            _('AppList: Applications'),
-            collapsible=True,
-            column=1,
-            css_classes=('collapse closed',),
-            exclude=('django.contrib.*',),
-        ))
-        
-        # append an app list module for "Administration"
         self.children.append(modules.ModelList(
-            _('ModelList: Administration'),
+            _('Articles'),
             column=1,
-            collapsible=False,
+            collapsible=True,
+            models=('project.articles.*',),
+        ))
+
+        self.children.append(modules.ModelList(
+            _('Flat'),
+            column=1,
+            collapsible=True,
+            models=('project.flat.*', 'preferences.*'),
+        ))
+
+        self.children.append(modules.ModelList(
+            _('Feeds'),
+            column=1,
+            collapsible=True,
+            models=('project.feeds.*',),
+        ))
+
+        self.children.append(modules.ModelList(
+            _('Others'),
+            column=1,
+            collapsible=True,
+            models=('adminfiles.*', 'feedback.*',),
+        ))
+
+#       # append an app list module for "Applications"
+#       self.children.append(modules.AppList(
+#           _('AppList: Applications'),
+#           collapsible=True,
+#           column=1,
+#           css_classes=('collapse closed',),
+#           exclude=('django.contrib.*',),
+#       ))
+        
+        self.children.append(modules.ModelList(
+            _('Administration'),
+            column=1,
+            collapsible=True,
             models=('django.contrib.*',),
         ))
         
