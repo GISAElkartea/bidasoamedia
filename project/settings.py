@@ -83,7 +83,6 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'django.contrib.markup',
     'django.contrib.sitemaps',
-    'django.contrib.comments',
 
     'south',
     'adminfiles',
