@@ -19,6 +19,10 @@ class Category(models.Model):
     def __unicode__(self):
         return self.name
 
+    @models.permalink
+    def get_absolute_url(self):
+        return 'articles:category', (), {'slug': self.slug}
+
 
 class ArticleManager(models.Manager):
     def published(self):
