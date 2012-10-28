@@ -31,15 +31,22 @@ html
         {% block extra_headers %}{% endblock extra_headers %}
 
     body
-        {% include 'feedback/button.yammy' %}
-        {% for category in category_list %}
-        a
-            - href {% url articles:category category.slug %}
-            | {{ category }}
-        {% endfor %}
+        header
+            a
+                - href /
+                img [src="{% static 'imgs/logo.png' %}"][alt="bidasoamedia"]
+        
+        section#categories
+            {% for category in category_list %}
+            a
+                - href {% url articles:category category.slug %}
+                | {{ category }}
+            {% endfor %}
 
-        {% block articles %}{% endblock articles %}
+        section#articles
+            {% block articles %}{% endblock articles %}
 
+        # {% include 'feedback/button.yammy' %}
         {% for feed in feed_list %}
         {% for news in feed.parse %}
         article
