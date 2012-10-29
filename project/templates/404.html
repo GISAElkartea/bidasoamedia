@@ -1,0 +1,10 @@
+{% extends base %}
+{% load i18n %}
+
+{% block articles %}
+<p>
+    {% blocktrans %}
+    The path you requested ({{ request.path }}) hasn't been found.
+    {% endblocktrans %}
+</p>
+{% endblock articles %}

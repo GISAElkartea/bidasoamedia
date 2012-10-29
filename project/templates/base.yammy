@@ -1,5 +1,7 @@
 {% load static compress %}
 
+<!doctype html/>
+
 html
     head
         title bidasoamedia{% block title %}{% endblock title %}
