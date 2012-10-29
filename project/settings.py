@@ -129,12 +129,6 @@ THUMBNAIL_EXTENSION = 'png'
 JQUERY_URL = 'js/jquery.min.js'
 
 
-#ADMINFILES_YOUTUBE_USER = ''
-#ADMINFILES_VIMEO_USER = ''
-#ADMINFILES_FLICKR_USER = ''
-#ADMINFILES_FLICKR_API_KEY = ''
-
-
 MARKITUP_FILTER = ('project.utils.markup_filter', {})
 MARKITUP_SET = 'markitup/sets/markdown'
 MARKITUP_SKIN = 'markitup/skins/markitup'
