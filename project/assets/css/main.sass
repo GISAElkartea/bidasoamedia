@@ -12,6 +12,9 @@ $darker: #383800
 a 
     text-decoration: none
     color: $darker
+h2
+    font-size: 1.1em
+    margin: .5em 0
 
 .category-0
     background: #d7d72d
@@ -72,13 +75,23 @@ section#articles
     @include font
     article
         clear: both
-        margin-bottom: 10em
+        margin-bottom: 13em
         img
             float: left 
+            border-radius: 6em
+            margin-top: 2em
+            width: 8em
         div#description
             float: left
-            width: 84%
+            width: 74%
             margin-left: 5%
+            p
+                text-align: justify
+            p.date
+                font-size: .8em
+                text-align: right
+                margin: 0
+    
 
 aside
     position: fixed

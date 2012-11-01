@@ -8,30 +8,26 @@ section#articles
     {% for article in article_list %}
 
     article
-        {% thumbnail article.image "100x100" crop="center" as image %}
+        {% thumbnail article.image "200x200" crop="center" as image %}
         img [src="{{ image.url }}"]
         {% endthumbnail %}
 
         div#description
             header
-                a
-                    - href {% url articles:detail article.slug %}
-                    | {{ article }}
+                h2
+                    a
+                        - href {% url articles:detail article.slug %}
+                        | {{ article }}
 
-                {{ article.pub_date }}
 
             {% if article.description %}
             {{ article.description }}
             {% else %}
             {{ article.body|truncatewords_html:50 }}
             {% endif %}
+            
+            p.date {{ article.pub_date }}
 
-
-#       {% for category in article.categories.select_related %}
-#       a
-#           - href {% url articles:category category.slug %}
-#           | {{ category }}
-#       {% endfor %}
 
     {% endfor %}
 
