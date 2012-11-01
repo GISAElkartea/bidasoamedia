@@ -4,27 +4,32 @@
 {% block articles %}
 
 {% for article in article_list %}
-a
-    - href {% url articles:detail article.slug %}
-    | {{ article }}
 
-{% thumbnail article.image "100x100" crop="center" as image %}
-img [src="{{ image.url }}"]
-{% endthumbnail %}
+article
+    {% thumbnail article.image "100x100" crop="center" as image %}
+    img [src="{{ image.url }}"]
+    {% endthumbnail %}
 
-{% if article.description %}
-{{ article.description }}
-{% else %}
-{{ article.body|truncatewords_html:50 }}
-{% endif %}
+    div#description
+        header
+            a
+                - href {% url articles:detail article.slug %}
+                | {{ article }}
 
-{{ article.pub_date }}
+            {{ article.pub_date }}
 
-{% for category in article.categories.select_related %}
-a
-    - href {% url articles:category category.slug %}
-    | {{ category }}
-{% endfor %}
+        {% if article.description %}
+        {{ article.description }}
+        {% else %}
+        {{ article.body|truncatewords_html:50 }}
+        {% endif %}
+
+
+#   {% for category in article.categories.select_related %}
+#   a
+#       - href {% url articles:category category.slug %}
+#       | {{ category }}
+#   {% endfor %}
 
 {% endfor %}
 
