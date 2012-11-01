@@ -1,4 +1,5 @@
 from django.db import models
+from django.conf import settings
 from django.utils.translation import ugettext as _
 from django.utils.timezone import now
 
@@ -23,6 +24,11 @@ class Category(models.Model):
     def get_absolute_url(self):
         return 'articles:category', (), {'slug': self.slug}
 
+    @property
+    def number(self):
+        index = list(Category.objects.values_list('pk', flat=True)).index(
+                self.pk)
+        return index % settings.CATEGORY_NUMBER
 
 class ArticleManager(models.Manager):
     def published(self):
