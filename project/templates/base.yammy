@@ -38,18 +38,17 @@ html
                 - href /
                 img [src="{% static 'imgs/logo.png' %}"][alt="bidasoamedia"]
         
-        section#content
-            ul#categories
-                {% for category in category_list %}
-                li
-                    - class category-{% cycle '0' '1' '2' '3' '4' '5' %}
-                    a
-                        - href {% url articles:category category.slug %}
-                        | {{ category }}
-                {% endfor %}
+        ul#categories
+            {% for category in category_list %}
+            li
+                - class category-{% cycle '0' '1' '2' '3' '4' '5' %}
+                a
+                    - href {% url articles:category category.slug %}
+                    | {{ category }}
+            {% endfor %}
 
-            section#articles
-                {% block articles %}{% endblock articles %}
+        section#articles
+            {% block articles %}{% endblock articles %}
 
         # {% include 'feedback/button.yammy' %}
         aside
