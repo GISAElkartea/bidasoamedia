@@ -2,37 +2,39 @@
 {% load thumbnail infinite_pagination %}
 
 {% block articles %}
+section#articles
+    - class category-{{ category.number }}
 
-{% for article in article_list %}
+    {% for article in article_list %}
 
-article
-    {% thumbnail article.image "100x100" crop="center" as image %}
-    img [src="{{ image.url }}"]
-    {% endthumbnail %}
+    article
+        {% thumbnail article.image "100x100" crop="center" as image %}
+        img [src="{{ image.url }}"]
+        {% endthumbnail %}
 
-    div#description
-        header
-            a
-                - href {% url articles:detail article.slug %}
-                | {{ article }}
+        div#description
+            header
+                a
+                    - href {% url articles:detail article.slug %}
+                    | {{ article }}
 
-            {{ article.pub_date }}
+                {{ article.pub_date }}
 
-        {% if article.description %}
-        {{ article.description }}
-        {% else %}
-        {{ article.body|truncatewords_html:50 }}
-        {% endif %}
+            {% if article.description %}
+            {{ article.description }}
+            {% else %}
+            {{ article.body|truncatewords_html:50 }}
+            {% endif %}
 
 
-#   {% for category in article.categories.select_related %}
-#   a
-#       - href {% url articles:category category.slug %}
-#       | {{ category }}
-#   {% endfor %}
+#       {% for category in article.categories.select_related %}
+#       a
+#           - href {% url articles:category category.slug %}
+#           | {{ category }}
+#       {% endfor %}
 
-{% endfor %}
+    {% endfor %}
 
-{% paginate %}
+    {% paginate %}
 
 {% endblock articles %}

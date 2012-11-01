@@ -2,21 +2,22 @@
 {% load thumbnail %}
 
 {% block articles %}
+section#articles
 
-{{ article }}
+    {{ article }}
 
-{% thumbnail article.image "100x100" crop="center" as image %}
-img [src="{{ image.url }}"]
-{% endthumbnail %}
+    {% thumbnail article.image "100x100" crop="center" as image %}
+    img [src="{{ image.url }}"]
+    {% endthumbnail %}
 
-{{ article.body }}
+    {{ article.body }}
 
-{{ article.pub_date }}
+    {{ article.pub_date }}
 
-{% for category in article.categories.select_related %}
-a
-    - href {% url articles:category category.slug %}
-    | {{ category }}
-{% endfor %}
+    {% for category in article.categories.select_related %}
+    a
+        - href {% url articles:category category.slug %}
+        | {{ category }}
+    {% endfor %}
 
 {% endblock articles %}

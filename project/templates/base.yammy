@@ -36,33 +36,39 @@ html
         header
             a
                 - href /
-                img [src="{% static 'imgs/logo.png' %}"][alt="bidasoamedia"]
+                img [src="{% static 'imgs/logo.svg' %}"][alt="bidasoamedia"]
         
         ul#categories
             {% for category in category_list %}
             li
-                - class category-{% cycle '0' '1' '2' '3' '4' '5' %}
+                - class category-{{ category.number }}
                 a
                     - href {% url articles:category category.slug %}
                     | {{ category }}
             {% endfor %}
 
-        section#articles
-            {% block articles %}{% endblock articles %}
+        {% block articles %}{% endblock articles %}
 
         # {% include 'feedback/button.yammy' %}
         aside
+            a.flatpage
+                - href #
+                | Borratzeko
             {% for flatpage in flatpage_list %}
             a
                 - href {{ flatpage.get_absolute_url }}
                 | {{ flatpage }}
             {% endfor %}
 
-            {% for feed in feed_list %}
-            {% for news in feed.parse %}
-            article
-                img [src="{{ feed.favicon }}"]
-                a [href="{{ news.link }}"] {{ news.title }}
-                p {{ news.summary|striptags|safe }}
-            {% endfor %}
-            {% endfor %}
+            div#feeds
+                {% for feed in feed_list %}
+                {% for news in feed.parse %}
+                article
+                    img [src="{{ feed.favicon }}"]
+                    a [href="{{ news.link }}"] {{ news.title }}
+                {% endfor %}
+                {% endfor %}
+            footer.flatpage
+                | bidasoamedia
+                | gisa elkartea
+                | Iturria
