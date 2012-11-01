@@ -1,10 +1,80 @@
 {% extends base %}
 {% load i18n %}
 
+{% block extra_headers %}
+<style type="text/css">
+    div#error404 {
+        width: 80%;
+        margin: 5em 10% 0 10%;
+    }
+        #not {
+            display: inline-block;
+            background: #a8a800;
+            width: 15em;
+            height: 15em;
+            vertical-align: middle;
+            border-radius: 15em;
+            margin-right: 3em;
+        }
+            #not p {
+                line-height: 11em;
+                margin: 0;
+                text-align: center;
+                font-size: 1.4em;
+                font-family: Comfortaa;
+            }
+        #numbers {
+            display: inline-block;
+            background: #cfcf00;
+            width: 10em;
+            height: 10em;
+            vertical-align: middle;
+            border-radius: 6em;
+            margin-right: 3em;
+        }
+            #numbers p {
+                line-height: 2.5em;
+                margin: 0;
+                text-align: center;
+                font-size: 4.5em;
+                font-family: Comfortaa;
+            }
+        #error {
+            display: inline-block;
+            background: #ededa3;
+            width: 5em;
+            height: 5em;
+            vertical-align: middle;
+            border-radius: 5em;
+        }
+            #error p {
+                line-height: 4em;
+                margin: 0;
+                text-align: center;
+                font-size: 1.3em;
+                font-family: Comfortaa;
+            }
+        p#path {
+            width: 100%;
+            font-family: Comfortaa;
+            font-weight: bold;
+            font-size: 1.4em;
+        }
+
+</style>
+{% endblock extra_headers %}
+
 {% block articles %}
-<p>
-    {% blocktrans %}
-    The path you requested ({{ request.path }}) hasn't been found.
-    {% endblocktrans %}
-</p>
+<section id="articles">
+    <div id="error404">
+        <div id="not"><p>{% trans 'Page not found' %}</p></div>
+        <div id="numbers"><p>404</p></div>
+        <div id="error"><p>{% trans 'error' %}</p></div>
+        <p id="path">
+            {% blocktrans with path=request.path %}
+            The path you requested ({{ path }}) hasn't been found.
+            {% endblocktrans %}
+        </p>
+    </div>
+</section>
 {% endblock articles %}
