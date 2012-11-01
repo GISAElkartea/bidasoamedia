@@ -19,7 +19,7 @@ class ArticleCategory(ArticleList):
     def get_queryset(self, *args, **kwargs):
         q = super(ArticleCategory, self).get_queryset(*args, **kwargs)
         self.category = get_object_or_404(Category, slug=self.kwargs['slug'])
-        return q.filter(categories=category)
+        return q.filter(categories=self.category)
 
     def get_context_data(self, *args, **kwargs):
         context = super(ArticleCategory, self).get_context_data(*args, **kwargs)
