@@ -157,3 +157,5 @@ CELERYBEAT_SCHEDULE = {
             'schedule': timedelta(seconds=300),
             },
         }
+
+CATEGORY_NUMBER = 5
