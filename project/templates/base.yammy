@@ -37,6 +37,7 @@ html
             a
                 - href /
                 img [src="{% static 'imgs/logo.svg' %}"][alt="bidasoamedia"]
+                | bidasoamedia
         
         ul#categories
             {% for category in category_list %}
