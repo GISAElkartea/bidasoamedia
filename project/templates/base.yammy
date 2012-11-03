@@ -46,6 +46,8 @@ html
                 img [src="{% static 'imgs/logo.svg' %}"][alt="bidasoamedia"]
                 | bidasoamedia
             audio[src="http://82.194.74.21:8000/antxetairratia.mp3"]
+            p#radio 
+                Antxeta irratia zuzenean
         
         ul#categories
             {% for category in category_list %}
