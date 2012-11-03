@@ -1,4 +1,4 @@
-{% load static compress %}
+{% load static compress i18n %}
 
 <!doctype html/>
 
@@ -80,9 +80,18 @@ html
                 {% endfor %}
                 {% endfor %}
             footer.flatpage
-                | Bidasoamedia
-                | gisa elkartea
-                | Iturria
+                div#bidasoamedia
+                    a
+                        - href mailto:kontaktua@bidasoamedia.info
+                        | kontaktua@bidasoamedia.info
+                    | TEL EFO NOA
+                div#gisa
+                    a
+                        - href https://lagunak.gisa-elkartea.org/projects/bidasoamedia
+                        | {% trans 'Source code' %} |
+                    a
+                        - href http://www.gisa-elkartea.org
+                        | Gisa Elkartea
         script
             $('audio').mediaelementplayer({
                 features: ['playpause', 'volume']
