@@ -13,6 +13,10 @@ html
         link
             - rel stylesheet
             - type text/css
+            - href {% static 'mediaelement/mediaelementplayer.css' %}
+        link
+            - rel stylesheet
+            - type text/css
             - href {% static 'feedback/main.css' %}
         {% endcompress %}
         {% compress js %}
@@ -22,6 +26,9 @@ html
         script
             - type text/javascript
             - src {% static 'js/bidasoamedia.js' %}
+        script
+            - type text/javascript
+            - src {% static 'mediaelement/mediaelement-and-player.min.js' %}
         script
             - type text/javascript
             - src {% static 'feedback/jquery.form.js' %}
@@ -38,6 +45,7 @@ html
                 - href /
                 img [src="{% static 'imgs/logo.svg' %}"][alt="bidasoamedia"]
                 | bidasoamedia
+            audio[src="http://82.194.74.21:8000/antxetairratia.mp3"]
         
         ul#categories
             {% for category in category_list %}
@@ -73,3 +81,7 @@ html
                 | bidasoamedia
                 | gisa elkartea
                 | Iturria
+        script
+            $('audio').mediaelementplayer({
+                features: ['playpause', 'volume']
+            });
