@@ -80,7 +80,7 @@ html
                 {% endfor %}
                 {% endfor %}
             footer.flatpage
-                | bidasoamedia
+                | Bidasoamedia
                 | gisa elkartea
                 | Iturria
         script
