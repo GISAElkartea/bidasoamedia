@@ -7,7 +7,7 @@ section#articles
 
     {% for article in article_list %}
 
-    article
+    article.list
         {% thumbnail article.image "200x200" crop="center" as image %}
         img [src="{{ image.url }}"]
         {% endthumbnail %}
@@ -26,7 +26,7 @@ section#articles
             {{ article.body|truncatewords_html:50 }}
             {% endif %}
             
-            p.date {{ article.pub_date }}
+            time {{ article.pub_date }}
 
 
     {% endfor %}

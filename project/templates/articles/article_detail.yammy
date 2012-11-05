@@ -3,21 +3,19 @@
 
 {% block articles %}
 section#articles
+    article.detail
+        h1 {{ article }}
+        
+        p.info
+            time {{ article.pub_date }}
 
-    {{ article }}
+            {% for category in article.categories.select_related %}
+            a.category
+                - href {% url articles:category category.slug %}
+                | {{ category }}
+            {% endfor %}
 
-    {% thumbnail article.image "100x100" crop="center" as image %}
-    img [src="{{ image.url }}"]
-    {% endthumbnail %}
+        {{ article.body }}
 
-    {{ article.body }}
-
-    {{ article.pub_date }}
-
-    {% for category in article.categories.select_related %}
-    a
-        - href {% url articles:category category.slug %}
-        | {{ category }}
-    {% endfor %}
 
 {% endblock articles %}

@@ -24,15 +24,15 @@ h2
     margin: .5em 0
 
 .category-0
-    background: #d7d72d
+    background: #d7d72d !important
 .category-1
-    background: #dfdf57
+    background: #dfdf57 !important
 .category-2
-    background: #e7e781
+    background: #e7e781 !important
 .category-3
-    background: #efefab
+    background: #efefab !important
 .category-4
-    background: #f7f7d5
+    background: #f7f7d5 !important
 
 body
     margin: 0
@@ -101,7 +101,14 @@ section#articles
     padding-left: 4em
     @include font
     background: #fafae7
-    article
+    time, p.info
+        font-size: .8em
+        margin: 0
+        text-align: right
+        display: block
+    p
+        text-align: justify
+    article.list
         clear: both
         margin-bottom: 13em
         img
@@ -113,34 +120,28 @@ section#articles
             float: left
             width: 76%
             margin: 2% 5% 
-            p
-                text-align: justify
-            p.date
-                font-size: .8em
-                text-align: right
-                margin: 0
-    div#detail
+
+    article.detail
+        h1:first-child
+            font-size: 1.5em
         img
+            display: block
+            margin: 1em auto
+            max-width: 50%
             
         img.left
+            float: left
+            margin: 1em
 
         img.right
+            float: right
+            margin: 1em
 
-        h1
-
-        h2
-        
-        h3
-
-        h4
-
-        h5
-
-        h6
-
-        li
+        h1, h2, h3, h4, h5, h6
+            color: $darker
 
         a
+            color: $dark
 
 
 
