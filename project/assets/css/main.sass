@@ -9,6 +9,9 @@ $darker: #383800
 @mixin font
     font-family: "News Cycle"
     font-size: 1em
+@mixin headergradient
+    border: solid 1em -moz-linear-gradient(top, $light, rgba(255,255,255,0))
+    background: -webkit-gradient(linear, center top, center bottom, from($dark), to($darker))
 @mixin gradient
     background: -moz-linear-gradient(top, $dark, $darker)
     background: -webkit-gradient(linear, center top, center bottom, from($dark), to($darker))
@@ -40,6 +43,7 @@ body > header
     height: 9em
     position: fixed
     background: $light
+    box-shadow: 0 .2em .2em $light
     a
         position: absolute
         top: 1.5em
@@ -96,6 +100,7 @@ section#articles
     z-index: -1
     padding-left: 4em
     @include font
+    background: #fafae7
     article
         clear: both
         margin-bottom: 13em
@@ -114,7 +119,30 @@ section#articles
                 font-size: .8em
                 text-align: right
                 margin: 0
-    
+    div#detail
+        img
+            
+        img.left
+
+        img.right
+
+        h1
+
+        h2
+        
+        h3
+
+        h4
+
+        h5
+
+        h6
+
+        li
+
+        a
+
+
 
 aside
     position: fixed
