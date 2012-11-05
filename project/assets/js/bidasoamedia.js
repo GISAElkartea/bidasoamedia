@@ -14,9 +14,9 @@ function ajax() {
 
 function scroll_feeds() {
     setTimeout(function() {
-        var first = $('#feeds article:first');
-        first.remove();
-        $('#feeds').append(first);
+        var last = $('#feeds article:last');
+        last.remove();
+        $('#feeds').prepend(last);
         scroll_feeds();
     }, 5000);
 };
