@@ -51,6 +51,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'monkey_team.middleware.MonkeyTeamMiddleware',
 )
 
 ROOT_URLCONF = 'project.urls'
@@ -95,6 +96,7 @@ INSTALLED_APPS = (
     'preferences',
     'sortable',
     'infinite_pagination',
+    'monkey_team',
 
     'grappelli.dashboard',
     'grappelli',

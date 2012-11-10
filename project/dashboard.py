@@ -50,7 +50,7 @@ class Dashboard(Dashboard):
             _('Administration'),
             column=1,
             collapsible=True,
-            models=('django.contrib.*',),
+            models=('django.contrib.*', 'monkey_team.*'),
         ))
         
         # append another link list module for "support".
