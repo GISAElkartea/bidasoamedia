@@ -64,13 +64,8 @@ html
 
         # {% include 'feedback/button.yammy' %}
         aside
-            a.flatpage
-                - href #
-                | Borratzeko
-                - href #
-                | Bigarrena Borratzeko
             {% for flatpage in flatpage_list %}
-            a
+            a.flatpage
                 - href {{ flatpage.get_absolute_url }}
                 | {{ flatpage }}
             {% endfor %}
@@ -85,10 +80,7 @@ html
                 {% endfor %}
             footer.flatpage
                 div#bidasoamedia
-                    a
-                        - href mailto:kontaktua@bidasoamedia.info
-                        | kontaktua@bidasoamedia.info
-                    | TEL EFO NOA
+                    {{ preferences.ContactPreferences.text }}
                 div#gisa
                     a
                         - href https://lagunak.gisa-elkartea.org/projects/bidasoamedia

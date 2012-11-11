@@ -73,6 +73,7 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'project.context_processors.ajax_template',
     'project.articles.context_processors.category_list',
     'project.feeds.context_processors.feed_list',
+    'project.flat.context_processors.flatpage_list',
 )
 
 INSTALLED_APPS = (
