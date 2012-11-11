@@ -58,6 +58,9 @@ html
                 a 
                     - href http://www.antxetamedia.info
                     | Antxeta irratia
+            a#rss 
+                - href {% url articles:rss %}
+                - alt feeds
         
         ul#categories
             {% for category in category_list %}

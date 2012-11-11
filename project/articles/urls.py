@@ -10,6 +10,6 @@ urlpatterns = patterns('',
             name='category'),
         url('^article/(?P<slug>(\w|\d|-)+)/$', ArticleDetail.as_view(), 
             name='detail'),
-        url('^rss/$', ArticlesRSS()),
-        url('^atom/$', ArticlesAtom()),
+        url('^rss/$', ArticlesRSS(), name='rss'),
+        url('^atom/$', ArticlesAtom(), name='atom'),
 )
