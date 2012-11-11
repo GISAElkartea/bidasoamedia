@@ -14,6 +14,7 @@ oembed.autodiscover()
 urlpatterns = patterns('',
         url(r'^$', RedirectView.as_view(url='articles')),
         url(r'^articles/', include('project.articles.urls', namespace='articles')),
+        url(r'^flat/', include('project.flat.urls', namespace='flat')),
         url(r'^grappelli/', include('grappelli.urls')),
         url(r'^admin/', include(admin.site.urls)),
         url(r'^adminfiles/', include('adminfiles.urls')),
