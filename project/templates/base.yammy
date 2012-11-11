@@ -45,9 +45,11 @@ html
                 - href /
                 img [src="{% static 'imgs/logo.svg' %}"][alt="bidasoamedia"]
                 | bidasoamedia
-            audio[src="http://82.194.74.21:8000/antxetairratia.mp3"]
-            p#radio 
-                Antxeta irratia zuzenean
+            div#audio
+                audio[src="http://82.194.74.21:8000/antxetairratia.mp3"]
+                a 
+                    - href http://www.antxetamedia.info
+                    | Antxeta irratia
         
         ul#categories
             {% for category in category_list %}
@@ -65,6 +67,8 @@ html
             a.flatpage
                 - href #
                 | Borratzeko
+                - href #
+                | Bigarrena Borratzeko
             {% for flatpage in flatpage_list %}
             a
                 - href {{ flatpage.get_absolute_url }}
