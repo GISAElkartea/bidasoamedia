@@ -26,7 +26,17 @@ function articles_bottom() {
     $('section#articles').height(aside_height);
 };
 
+function categories_left() {
+    $(window).resize(function() {
+        var categories = $('#categories');
+        var left = categories.width();
+        categories.css({left: '-{left}px'.replace('{left}', left)});
+    });
+    $(window).resize()
+};
+
 $(function() {
+    categories_left();
     ajax();
     scroll_feeds();
     articles_bottom();
