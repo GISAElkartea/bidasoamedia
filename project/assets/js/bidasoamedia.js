@@ -25,8 +25,9 @@ function show_available() {
     var aside = $('aside')
     var available = window.innerHeight - aside.position().top - aside.height();
     var feed_height = aside.find('#feeds article').first().height();
-    var available = parseInt(available / feed_height);
-    aside.find('#feeds article:nth-child(-n+{available})'.replace('{available}', available)).show();
+    var available = parseInt(available / feed_height) - 1;
+    var available = (available > 0) ? available : 0;
+    aside.find('#feeds article:lt({available})'.replace('{available}', available)).show();
 };
 
 function articles_bottom() {
