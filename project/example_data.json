@@ -1279,8 +1279,8 @@
         "pk": 1,
         "model": "preferences.contactpreferences",
         "fields": {
-            "text": "Helbidea:\r\n=========\r\n\r\n14 Bd. du Gal de Gaulle\r\n64.700 Hendaia\r\nKontrakale Kalea, 14\r\n20.300 Ir\u00fan\r\n\r\nTelefonoa\r\n=========\r\n\r\n+ 33 5 59 48 36 65\r\n\r\nFaxa\r\n====\r\n\r\n+ 33 5 59 48 30 65 ",
-            "_text_rendered": "<h1>Helbidea:</h1>\n<p>14 Bd. du Gal de Gaulle\n64.700 Hendaia\nKontrakale Kalea, 14\n20.300 Ir\u00fan</p>\n<h1>Telefonoa</h1>\n<ul>\n<li>33 5 59 48 36 65</li>\n</ul>\n<h1>Faxa</h1>\n<ul>\n<li>33 5 59 48 30 65 </li>\n</ul>",
+            "text": "### Helbidea:\r\n\r\n14 Bd. du Gal de Gaulle\r\n64.700 Hendaia\r\nKontrakale Kalea, 14\r\n20.300 Ir\u00fan\r\n\r\n### Telefonoa: +33 5 59 48 36 65\r\n\r\n### Faxa: +33 5 59 48 30 65 ",
+            "_text_rendered": "<h3>Helbidea:</h3>\n<p>14 Bd. du Gal de Gaulle\n64.700 Hendaia\nKontrakale Kalea, 14\n20.300 Ir\u00fan</p>\n<h3>Telefonoa: +33 5 59 48 36 65</h3>\n<h3>Faxa: +33 5 59 48 30 65</h3>",
             "email": "kontaktua@bidasoamedia.info",
             "sites": [
                 1
