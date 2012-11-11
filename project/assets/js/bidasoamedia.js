@@ -2,7 +2,7 @@ function ajax() {
     $('body a').live('click', function(event) {
         link = $(this).attr('href');
 
-        if (link.indexOf('/articles/') == 0) {
+        if (link.indexOf('/articles/') == 0 || link.indexOf('/flat/') == 0) {
             event.preventDefault();
             $.ajax({url: link}).success(function(data) {
                 $(data).replaceAll('section#articles');
