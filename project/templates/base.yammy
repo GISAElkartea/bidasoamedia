@@ -50,7 +50,7 @@ html
     body
         header
             a
-                - href /
+                - href {% url articles:list %}
                 img [src="{% static 'imgs/logo.svg' %}"][alt="bidasoamedia"]
                 | bidasoamedia
             div#audio
