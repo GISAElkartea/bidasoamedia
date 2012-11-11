@@ -21,6 +21,14 @@ function scroll_feeds() {
     }, 5000);
 };
 
+function show_available() {
+    var aside = $('aside')
+    var available = window.innerHeight - aside.position().top - aside.height();
+    var feed_height = aside.find('#feeds article').first().height();
+    var available = parseInt(available / feed_height);
+    aside.find('#feeds article:nth-child(-n+{available})'.replace('{available}', available)).show();
+};
+
 function articles_bottom() {
     var aside_height = $('aside').outerHeight();
     $('section#articles').height(aside_height);
@@ -37,7 +45,8 @@ function categories_left() {
 
 $(function() {
     categories_left();
-    ajax();
-    scroll_feeds();
     articles_bottom();
+    show_available();
+    scroll_feeds();
+    ajax();
 });
