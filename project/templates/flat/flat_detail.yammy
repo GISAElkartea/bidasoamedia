@@ -1,0 +1,10 @@
+{% extends base %}
+{% load thumbnail %}
+
+{% block articles %}
+section#articles
+    article.detail
+        h1 {{ flatpage }}
+        
+        {{ article.text }}
+{% endblock articles %}
