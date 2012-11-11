@@ -35,6 +35,14 @@ html
         script
             - type text/javascript
             - src {% static 'feedback/main.js' %}
+        script [type="text/javascript"]
+            $(function(){
+                feedback.init({
+                    'button':$('a#feedback'),
+                    'drop':$('#feedback_drop'),
+                    'popup':$('#feedback_popup')
+                });
+            });
         {% endcompress %}
 
         {% block extra_headers %}{% endblock extra_headers %}
@@ -62,8 +70,32 @@ html
 
         {% block articles %}{% endblock articles %}
 
-        # {% include 'feedback/button.yammy' %}
         aside
+            a#feedback.flatpage {% trans 'Feedback' %}
+            div#feedback_drop.hiding
+            div#feedback_popup.hiding
+                form.feedback [action="{% url feedback request.path %}"][method=POST]
+                    {% csrf_token %}
+
+                    div.name.error
+                    label [for=email] {% trans 'email (optional)' %}
+                    input [name=email]
+                    
+                    div.subject.error
+                    label [for=subject] {% trans 'subject (optional)' %}
+                    input [name=subject]
+
+                    div.text.error
+                    label [for=text] {% trans 'message' %}
+                    textarea [name=text]
+
+                    div.buttons
+                        button Send
+                
+                div.thanks.hiding {% trans 'Thank you for your feedback!' %}
+                div.close
+
+
             {% for flatpage in flatpage_list %}
             a.flatpage
                 - href {{ flatpage.get_absolute_url }}

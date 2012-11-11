@@ -160,6 +160,9 @@ aside
         @include titles
         color: $middle
 
+    #feedback
+        cursor: pointer
+
     div#feeds
         background: $middle
         margin-bottom: 1em
@@ -177,12 +180,8 @@ aside
                 vertical-align: middle
             a
                 vertical-align: middle
-        article:nth-child(1), article:nth-child(2), article:nth-child(3), article:nth-child(4), article:nth-child(5)
+        article.visible
             display: block
-        article:nth-child(5)
-            border: none
-            margin-bottom: 0
-            padding-bottom: 0
     footer.flatpage
         color: $darker
         margin-bottom: 0
