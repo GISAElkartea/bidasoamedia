@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: bidasoamedia 0.1\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2012-10-25 12:25+0200\n"
+"POT-Creation-Date: 2012-11-11 20:07+0100\n"
 "PO-Revision-Date: 2012-10-25 12:26+2\n"
 "Last-Translator: Unai Zalakain <unai@gisa-elkartea.org>\n"
 "Language-Team: EU <unai@gisa-elkartea.org>\n"
@@ -18,82 +18,165 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: dashboard.py:14
-msgid "AppList: Applications"
-msgstr ""
-
-#: dashboard.py:23
-msgid "ModelList: Administration"
-msgstr ""
-
-#: dashboard.py:31
-msgid "Support"
-msgstr ""
-
-#: dashboard.py:35
-msgid "Contact the developer"
-msgstr ""
-
-#: dashboard.py:45
-msgid "Recent Actions"
-msgstr ""
-
-#: articles/models.py:11
-msgid "Category"
-msgstr "Kategoria"
-
-#: articles/models.py:12
-msgid "Categories"
-msgstr "Kategoriak"
-
-#: articles/models.py:14
-msgid "name"
-msgstr "izena"
-
-#: articles/models.py:32
-msgid "Article"
-msgstr "Artikulua"
-
-#: articles/models.py:33
+#: dashboard.py:13 articles/models.py:44
 msgid "Articles"
 msgstr "Artikuluak"
 
-#: articles/models.py:35
-msgid "title"
-msgstr "izenburua"
+#: dashboard.py:20
+msgid "Flat"
+msgstr "Lauak"
 
-#: articles/models.py:36
-msgid "description"
-msgstr "deskribapena"
-
-#: articles/models.py:37
-msgid "populated from body if not given"
-msgstr "gorputzetik hartua ez bada ematen"
-
-#: articles/models.py:38
-msgid "body"
-msgstr "gorputza"
-
-#: articles/models.py:41
-msgid "publication date"
-msgstr "argitarapen data"
-
-#: articles/models.py:43
-msgid "categories"
-msgstr "kategoriak"
-
-#: feeds/models.py:7
-msgid "Feed"
-msgstr "Jarioa"
-
-#: feeds/models.py:8
+#: dashboard.py:27 feeds/models.py:12
 msgid "Feeds"
 msgstr "Jarioak"
 
-#: feeds/models.py:10
+#: dashboard.py:34
+msgid "Others"
+msgstr "Bestelakoak"
+
+#: dashboard.py:50
+msgid "Administration"
+msgstr "Kudeaketa"
+
+#: dashboard.py:58
+msgid "Support"
+msgstr "Laguntza"
+
+#: dashboard.py:62
+msgid "Contact the developer"
+msgstr "Garatzailearekin kontaktuan jarri"
+
+#: dashboard.py:72
+msgid "Recent Actions"
+msgstr "Azken Ekintzak"
+
+#: articles/feeds.py:9
+msgid "bidasoamedia.info articles"
+msgstr "bidasoamedia.info-ko artikuluak"
+
+#: articles/feeds.py:11
+msgid "Latest updates on bidasoamedia.info articles."
+msgstr "bidasoamedia.info-ko artikuluen azken eguneraketak"
+
+#: articles/models.py:13
+msgid "Category"
+msgstr "Kategoria"
+
+#: articles/models.py:14
+msgid "Categories"
+msgstr "Kategoriak"
+
+#: articles/models.py:16
+msgid "name"
+msgstr "izena"
+
+#: articles/models.py:43
+msgid "Article"
+msgstr "Artikulua"
+
+#: articles/models.py:46 flat/models.py:25
+msgid "title"
+msgstr "izenburua"
+
+#: articles/models.py:47
+msgid "description"
+msgstr "deskribapena"
+
+#: articles/models.py:48
+msgid "populated from body if not given"
+msgstr "gorputzetik hartua ez bada ematen"
+
+#: articles/models.py:49
+msgid "body"
+msgstr "gorputza"
+
+#: articles/models.py:51
+msgid "image"
+msgstr "irudia"
+
+#: articles/models.py:54
+msgid "publication date"
+msgstr "argitarapen data"
+
+#: articles/models.py:56
+msgid "categories"
+msgstr "kategoriak"
+
+#: feeds/models.py:11
+msgid "Feed"
+msgstr "Jarioa"
+
+#: feeds/models.py:14
 msgid "url"
 msgstr "url-a"
 
-#: feeds/models.py:12
+#: feeds/models.py:16
 msgid "quantity"
 msgstr "kantitatea"
+
+#: flat/models.py:12 flat/models.py:13
+msgid "Contact Preferences"
+msgstr "Kontakturako Xehetasunak"
+
+#: flat/models.py:16 flat/models.py:26
+msgid "text"
+msgstr "testua"
+
+#: flat/models.py:17
+msgid "email"
+msgstr "eposta"
+
+#: flat/models.py:22
+msgid "flatpage"
+msgstr "orri laua"
+
+#: flat/models.py:23
+msgid "flatpages"
+msgstr "orri lauak"
+
+#: templates/404.html:70
+msgid "Page not found"
+msgstr "Orria ez da aurkitu"
+
+#: templates/404.html:72
+msgid "error"
+msgstr "errorea"
+
+#: templates/404.html:74
+#, python-format
+msgid ""
+"\n"
+"            The path you requested (%(path)s) hasn't been found.\n"
+"            "
+msgstr ""
+"\n"
+"            Eskatutako helbidea (%(path)s) ez da aurkitu.\n"
+"            "
+
+#: templates/base.yammy:74
+msgid "Feedback"
+msgstr "Kontaktuan jarri"
+
+#: templates/base.yammy:81
+msgid "email (optional)"
+msgstr "eposta (hautazkoa)"
+
+#: templates/base.yammy:85
+msgid "subject (optional)"
+msgstr "gaia (hautazkoa)"
+
+#: templates/base.yammy:89
+msgid "message"
+msgstr "mezua"
+
+#: templates/base.yammy:93
+msgid "Send"
+msgstr "Bidali"
+
+#: templates/base.yammy:95
+msgid "Thank you for your feedback!"
+msgstr "Milesker zure mezuagatik!"
+
+#: templates/base.yammy:119
+msgid "Source code"
+msgstr "Iturri kodea"

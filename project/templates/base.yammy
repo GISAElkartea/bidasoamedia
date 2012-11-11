@@ -90,7 +90,7 @@ html
                     textarea [name=text]
 
                     div.buttons
-                        button Send
+                        button {% trans 'Send' %}
                 
                 div.thanks.hiding {% trans 'Thank you for your feedback!' %}
                 div.close
