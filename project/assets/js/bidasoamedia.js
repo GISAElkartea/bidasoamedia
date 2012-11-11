@@ -46,8 +46,8 @@ function categories_left() {
 
 $(function() {
     categories_left();
-    articles_bottom();
     show_available();
+    articles_bottom();
     scroll_feeds();
     ajax();
 });
