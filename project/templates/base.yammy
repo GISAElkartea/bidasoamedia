@@ -110,7 +110,7 @@ html
                 {% for news in feed.parse %}
                 article
                     img [src="{{ feed.favicon }}"]
-                    a [href="{{ news.link }}"] {{ news.title }}
+                    a [href="{{ news.link }}"][target="_blank"] {{ news.title }}
                 {% endfor %}
                 {% endfor %}
             footer.flatpage
