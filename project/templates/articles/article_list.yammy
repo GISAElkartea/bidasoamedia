@@ -6,29 +6,24 @@ section#articles
     - class category-{{ category.number }}
 
     {% for article in article_list %}
-
     article.list
-        {% thumbnail article.image "200x200" crop="center" as image %}
-        img [src="{{ image.url }}"]
-        {% endthumbnail %}
+        a [href="{% url articles:detail article.slug %}"]
+            {% thumbnail article.image "200x200" crop="center" as image %}
+            img [src="{{ image.url }}"]
+            {% endthumbnail %}
 
-        div#description
-            header
-                h2
-                    a
-                        - href {% url articles:detail article.slug %}
-                        | {{ article }}
+            div#description
+                header
+                    h2 {{ article }}
 
 
-            {% if article.description %}
-            {{ article.description }}
-            {% else %}
-            {{ article.body|truncatewords_html:50 }}
-            {% endif %}
-            
-            time {{ article.pub_date }}
-
-
+                {% if article.description %}
+                {{ article.description }}
+                {% else %}
+                {{ article.body|truncatewords_html:50 }}
+                {% endif %}
+                
+                time {{ article.pub_date }}
     {% endfor %}
 
     {% paginate %}

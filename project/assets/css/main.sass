@@ -97,11 +97,10 @@ ul#categories
 section#articles
     position: absolute   
     top: 9em
-    left: 1.4em
     width: 65%
     z-index: -2
     overflow: visible
-    padding-left: 7%
+    padding: .5em .2em 0 7%
     @include font
     background: #fafae7
     time, p.info
@@ -111,9 +110,13 @@ section#articles
         display: block
     p
         text-align: justify
+    article.list:hover 
+        background: rgba(255, 255, 255, .05)
+        box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, .2)
     article.list
+        padding-left: 5%
+        display: inline-block
         clear: both
-        margin-bottom: 13em
         img
             float: left 
             border-radius: 100%
