@@ -11,6 +11,9 @@ admin.autodiscover()
 import oembed
 oembed.autodiscover()
 
+from project.sitemaps import sitemaps
+
+
 urlpatterns = patterns('',
         url(r'^$', RedirectView.as_view(url='articles')),
         url(r'^articles/', include('project.articles.urls', namespace='articles')),
@@ -20,6 +23,7 @@ urlpatterns = patterns('',
         url(r'^adminfiles/', include('adminfiles.urls')),
         url(r'^markitup/', include('markitup.urls')),
         url(r'^feedback/', include('feedback.urls')),
+        url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
 )
 
 
