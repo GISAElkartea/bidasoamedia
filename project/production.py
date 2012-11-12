@@ -8,7 +8,7 @@ except ImportError:
     chars = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)'
     SECRET_KEY = get_random_string(50, chars)
     with open(os.path.join(DIR, 'secret_key.py'), 'w') as secret_key_file:
-        secret_key_file.write('SECRET_KEY = {}'.format(SECRET_KEY))
+        secret_key_file.write("SECRET_KEY = '{}'".format(SECRET_KEY))
 
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
