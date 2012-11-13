@@ -57,12 +57,12 @@ html
                 audio[src="http://82.194.74.21:8000/antxetairratia.mp3"]
                 a 
                     - href http://www.antxetamedia.info
-                    | Antxeta irratia
+                    | www.antxetamedia.info
             div#rss
                 a
                     - href {% url articles:rss %}
                     - alt feeds
-                    img [src="{% static 'imgs/rss.png' %}"]
+                    img [src="{% static 'imgs/rss.svg' %}"]
         
         ul#categories
             {% for category in category_list %}
