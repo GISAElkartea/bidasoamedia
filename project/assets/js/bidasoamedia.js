@@ -12,23 +12,34 @@ function ajax() {
     });
 };
 
-function scroll_feeds() {
-    setTimeout(function() {
+feeds = {
+    keep_scrolling: function() {
+        setTimeout(function() {
+            feeds.scroll();
+            feeds.keep_scrolling();
+        }, 5000);
+    },
+    scroll: function() {
         var last = $('#feeds article:last');
         last.remove();
         $('#feeds').prepend(last);
-        scroll_feeds();
-    }, 5000);
+        $('#feeds article').each(function(index) {
+            if (index < feeds.available) {
+                $(this).show();
+            } else {
+                $(this).hide();
+            }});
+    },
+    get_available: function() {
+        var aside = $('aside')
+        var available = window.innerHeight - aside.position().top - aside.height();
+        var feed_height = aside.find('#feeds article').first().height();
+        var available = parseInt(available / feed_height) - 1;
+        var available = (available > 0) ? available : 0;
+        this.available = available;
+    }
 };
 
-function show_available() {
-    var aside = $('aside')
-    var available = window.innerHeight - aside.position().top - aside.height();
-    var feed_height = aside.find('#feeds article').first().height();
-    var available = parseInt(available / feed_height) - 1;
-    var available = (available > 0) ? available : 0;
-    aside.find('#feeds article:lt({available})'.replace('{available}', available)).show();
-};
 
 function articles_bottom() {
     var aside_height = $('aside').outerHeight();
@@ -46,8 +57,9 @@ function categories_left() {
 
 $(function() {
     categories_left();
-    show_available();
     articles_bottom();
-    scroll_feeds();
+    feeds.get_available();
+    feeds.scroll();
+    feeds.keep_scrolling();
     ajax();
 });
