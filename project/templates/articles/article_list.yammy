@@ -1,9 +1,11 @@
 {% extends base %}
-{% load thumbnail infinite_pagination %}
+{% load thumbnail infinite_pagination i18n %}
+
+{% block title %}{% if category %}{{ category|capfirst }} | {% endif %}{% trans 'Articles' %} | {% endblock title %}
 
 {% block articles %}
 section#articles
-    - class category-{{ category.number }}
+    - class {% if category %}category-{{ category.number }}{% endif %}
 
     {% for article in article_list %}
     article.list

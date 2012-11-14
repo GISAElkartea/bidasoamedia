@@ -4,7 +4,7 @@
 
 html
     head
-        title bidasoamedia{% block title %}{% endblock title %}
+        title {% block title %}{% endblock title %}bidasoamedia
         {% compress css %}
         link
             - rel stylesheet

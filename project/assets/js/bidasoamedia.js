@@ -6,6 +6,9 @@ function ajax() {
             event.preventDefault();
             $.ajax({url: link}).success(function(data) {
                 $(data).replaceAll('section#articles');
+                var title = $('div#title');
+                title.remove();
+                $('head title').text(title.text());
                 articles_bottom();
             });
         };
