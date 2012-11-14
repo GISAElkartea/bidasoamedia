@@ -52,6 +52,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'monkey_team.middleware.MonkeyTeamMiddleware',
+    'django_badbrowser.middleware.BrowserSupportDetection',
 )
 
 ROOT_URLCONF = 'project.urls'
@@ -98,6 +99,7 @@ INSTALLED_APPS = (
     'sortable',
     'infinite_pagination',
     'monkey_team',
+    'django_badbrowser',
 
     'grappelli.dashboard',
     'grappelli',
@@ -162,3 +164,11 @@ CELERYBEAT_SCHEDULE = {
         }
 
 CATEGORY_NUMBER = 5
+
+
+BADBROWSER_SUGGEST = ('firefox', 'chrome', 'safari', 'opera')
+BADBROWSER_REQUIREMENTS = (
+    ('firefox', '3.0'),
+    ('chrome', '3.0'),
+    ('microsoft internet explorer', '8'),
+)
