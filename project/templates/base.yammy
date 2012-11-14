@@ -57,7 +57,7 @@ html
                 audio[src="http://82.194.74.21:8000/antxetairratia.mp3"]
                 a 
                     - href http://www.antxetamedia.info
-                    | Antxeta irratia
+                    | www.antxetamedia.info
             div#rss
                 a
                     - href {% url articles:rss %}
