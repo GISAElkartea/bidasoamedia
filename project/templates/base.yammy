@@ -62,7 +62,7 @@ html
                 a
                     - href {% url articles:rss %}
                     - alt feeds
-                    img [src="{% static 'imgs/rss.png' %}"]
+                    img [src="{% static 'imgs/rss.svg' %}"]
         
         ul#categories
             {% for category in category_list %}
