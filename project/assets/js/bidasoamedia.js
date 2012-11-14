@@ -41,18 +41,23 @@ feeds = {
 };
 
 
-function articles_bottom() {
-    var aside_height = $('aside').outerHeight();
-    $('section#articles').height(aside_height);
-};
-
 function categories_left() {
     $(window).resize(function() {
         var categories = $('#categories');
         var left = categories.width();
         categories.css({left: '-{left}px'.replace('{left}', left)});
+        categories.show();
     });
     $(window).resize()
+};
+
+
+function articles_bottom() {
+    var articles = $('section#articles')
+    var height = window.innerHeight - articles.position().top;
+    if (articles.height() < height) {
+        articles.height(height);
+    };
 };
 
 $(function() {
