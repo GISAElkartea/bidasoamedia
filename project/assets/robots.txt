@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /grappelli
+Disallow: /admin
+Disallow: /adminfiles
+Disallow: /markitup
+Disallow: /feedback
+Disallow: /badbrowser

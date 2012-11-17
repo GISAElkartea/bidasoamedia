@@ -1,1 +1,3 @@
 {% block articles %}{% endblock articles %}
+
+div#title[style="display: none"] {% block title %}{% endblock title %}bidasoamedia

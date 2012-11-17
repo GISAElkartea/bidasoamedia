@@ -801,6 +801,19 @@
         }
     },
     {
+        "pk": 62,
+        "model": "oembed.storedprovider",
+        "fields": {
+            "regex": "http://youtu.be/\\S*",
+            "wildcard_regex": "http://youtu.be/*",
+            "provides": false,
+            "active": true,
+            "scheme_url": "",
+            "endpoint_url": "http://www.youtube.com/oembed",
+            "resource_type": "video"
+        }
+    },
+    {
         "pk": 1,
         "model": "auth.group",
         "fields": {

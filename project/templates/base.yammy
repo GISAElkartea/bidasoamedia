@@ -4,8 +4,8 @@
 
 html
     head
-        title bidasoamedia{% block title %}{% endblock title %}
-        link [rel="shortcut icon"][href="{% static 'imgs/favicon.ico' %}"]
+        title {% block title %}{% endblock title %}bidasoamedia
+        link [rel="shortcut icon"][href="{% static 'imgs/favicon.png' %}"]
         {% compress css %}
         link
             - rel stylesheet

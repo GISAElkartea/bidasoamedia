@@ -1,6 +1,8 @@
 {% extends base %}
 {% load thumbnail %}
 
+{% block title %}{{ article }} | {% endblock title %}
+
 {% block articles %}
 section#articles
     article.detail
