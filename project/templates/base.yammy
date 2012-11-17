@@ -5,6 +5,7 @@
 html
     head
         title bidasoamedia{% block title %}{% endblock title %}
+        link [rel="shortcut icon"][href="{% static 'imgs/favicon.ico' %}"]
         {% compress css %}
         link
             - rel stylesheet
