@@ -61,7 +61,7 @@ html
                     | www.antxetamedia.info
             div#rss
                 a
-                    - href {% url articles:rss %}
+                    - href {% url rss %}
                     - alt feeds
                     img [src="{% static 'imgs/rss.svg' %}"]
         

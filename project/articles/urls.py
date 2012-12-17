@@ -1,7 +1,6 @@
 from django.conf.urls.defaults import patterns, url
 
 from project.articles.views import ArticleList, ArticleDetail, ArticleCategory
-from project.articles.feeds import ArticlesRSS, ArticlesAtom
 
 
 urlpatterns = patterns('',
@@ -10,6 +9,4 @@ urlpatterns = patterns('',
             name='category'),
         url('^article/(?P<slug>(\w|\d|-)+)/$', ArticleDetail.as_view(), 
             name='detail'),
-        url('^rss/$', ArticlesRSS(), name='rss'),
-        url('^atom/$', ArticlesAtom(), name='atom'),
 )

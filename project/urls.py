@@ -12,11 +12,14 @@ import oembed
 oembed.autodiscover()
 
 from project.sitemaps import sitemaps
+from project.articles.feeds import ArticlesRSS, ArticlesAtom
 
 
 urlpatterns = patterns('',
         url(r'^$', RedirectView.as_view(url='articles')),
         url(r'^articles/', include('project.articles.urls', namespace='articles')),
+        url(r'^rss/articles/$', ArticlesRSS(), name='rss'),
+        url(r'^atom/articles/$', ArticlesAtom(), name='atom'),
         url(r'^flat/', include('project.flat.urls', namespace='flat')),
         url(r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
 
