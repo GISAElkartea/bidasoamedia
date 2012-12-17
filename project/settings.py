@@ -94,6 +94,7 @@ INSTALLED_APPS = (
     'compressor',
     'sorl.thumbnail',
     'djcelery',
+    'kombu.transport.django',
     'feedback',
     'preferences',
     'sortable',
@@ -159,7 +160,7 @@ CELERYBEAT_SCHEDULER = 'djcelery.schedulers.DatabaseScheduler'
 CELERYBEAT_SCHEDULE = {
         'update_feeds': {
             'task': 'project.feeds.tasks.update_feeds',
-            'schedule': timedelta(seconds=300),
+            'schedule': timedelta(seconds=30),
             },
         }
 
