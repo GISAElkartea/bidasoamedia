@@ -128,5 +128,6 @@ html
                         | Gisa Elkartea
         script
             $('audio').mediaelementplayer({
+                flashName: '{% static 'mediaelement/flashmediaelement.swf' %}',
                 features: ['playpause', 'volume']
             });
