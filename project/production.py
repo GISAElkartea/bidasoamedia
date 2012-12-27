@@ -50,7 +50,7 @@ DATABASES = {
         }
 
 
-ADMINS = (('Unai Zalakain', '{}@{}'.format('contact', 'unaizalakain.info')))
+ADMINS = (('Unai Zalakain', '{}@{}'.format('contact', 'unaizalakain.info')),)
 MANAGERS = ADMINS
 
 FEEDBACK_EMAIL = ''
