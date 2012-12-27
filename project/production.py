@@ -21,7 +21,14 @@ MEDIA_ROOT = '/home/bidasoamedia/webapps/static/media/'
 MEDIA_URL = '/files/media/'
 ADMIN_MEDIA_PREFIX = os.path.join(STATIC_URL, 'grappelli')
 
-CACHE_BACKEND = 'memcached://unix:/home/bidasoamedia/webapps/bidasoamedia/memcached.sock'
+CACHES = {
+    'default': {
+        'BACKEND': 'django.core.cache.backends.memcached.MemcachedCache',
+        'LOCATION': 'unix:/home/bidasoamedia/webapps/bidasoamedia/memcached.sock',
+        'TIMEOUT': 60,
+    }
+}
+
 CACHE_MIDDLEWARE_SECONDS = 90
 MIDDLEWARE_CLASSES = ('django.middleware.cache.UpdateCacheMiddleware',
                     'django.middleware.gzip.GZipMiddleware') +\
