@@ -1,17 +1,14 @@
 function ajax() {
-    $('body a').live('click', function(event) {
+    $('body a[href^="/articles"]').live('click', function(event) {
+        event.preventDefault();
         link = $(this).attr('href');
-
-        if (link.indexOf('/articles') == 0 || link.indexOf('/flat') == 0) {
-            event.preventDefault();
-            $.ajax({url: link}).success(function(data) {
-                $(data).replaceAll('section#articles');
-                var title = $('div#title');
-                title.remove();
-                $('head title').text(title.text());
-                articles_bottom();
-            });
-        };
+        $.ajax({url: link}).success(function(data) {
+            $(data).replaceAll('section#articles');
+            var title = $('div#title');
+            title.remove();
+            $('head title').text(title.text());
+            articles_bottom();
+        });
     });
 };
 
