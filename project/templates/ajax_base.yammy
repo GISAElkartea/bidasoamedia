@@ -1,3 +1,7 @@
 {% block articles %}{% endblock articles %}
 
 div#title[style="display: none"] {% block title %}{% endblock title %}bidasoamedia
+
+noscript
+    p
+        img [src="http://bidasoamedia.info/stats/piwik.php?idsite=1"][style="border:0"][alt=""]
