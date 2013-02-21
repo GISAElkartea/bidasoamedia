@@ -51,7 +51,6 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    'monkey_team.middleware.MonkeyTeamMiddleware',
     'django_badbrowser.middleware.BrowserSupportDetection',
 )
 
@@ -99,7 +98,6 @@ INSTALLED_APPS = (
     'preferences',
     'sortable',
     'infinite_pagination',
-    'monkey_team',
     'django_badbrowser',
 
     'grappelli.dashboard',

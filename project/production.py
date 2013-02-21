@@ -12,7 +12,7 @@ except ImportError:
 
 DEBUG = False
 TEMPLATE_DEBUG = DEBUG
-SEND_BROKEN_LINK_EMAILS = DEBUG
+SEND_BROKEN_LINK_EMAILS = False
 
 
 STATIC_ROOT = '/home/bidasoamedia/webapps/static/static/'

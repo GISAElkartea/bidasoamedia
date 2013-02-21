@@ -7,12 +7,14 @@ from project.articles.models import Article, Category
 
 
 class ArticleList(ListView):
-    queryset = Article.objects.published()
     allow_empty = True
     paginate_by = 10
     paginator_class = InfinitePaginator
     template_name = 'articles/article_list.yammy'
     context_object_name = 'article_list'
+
+    def get_queryset(self, *args, **kwargs):
+        return Article.objects.published()
 
 
 class ArticleCategory(ArticleList):
@@ -30,3 +32,6 @@ class ArticleCategory(ArticleList):
 class ArticleDetail(DetailView):
     template_name = 'articles/article_detail.yammy'
     queryset = Article.objects.published()
+
+    def get_queryset(self, *args, **kwargs):
+        return Article.objects.published()
