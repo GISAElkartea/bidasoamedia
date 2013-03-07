@@ -34,7 +34,7 @@ feeds = {
         var aside = $('aside')
         var available = window.innerHeight - aside.position().top - aside.height();
         var feed_height = aside.find('#feeds article').first().height();
-        var available = parseInt(available / feed_height) - 1;
+        var available = parseInt(available / feed_height) - 2;
         var available = (available > 0) ? available : 0;
         this.available = available;
     }
