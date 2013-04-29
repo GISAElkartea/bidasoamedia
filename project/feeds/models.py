@@ -35,5 +35,5 @@ class Feed(models.Model):
     def update(self):
         feed = parse(self.url)
         entries = feed.entries[:self.quantity]
-        cache.set(self.cache_key, entries)
+        cache.set(self.cache_key, entries, timeout=0)
         return entries
