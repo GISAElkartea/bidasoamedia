@@ -92,8 +92,6 @@ INSTALLED_APPS = (
     'markitup',
     'compressor',
     'sorl.thumbnail',
-    'djcelery',
-    'kombu.transport.django',
     'feedback',
     'preferences',
     'sortable',
@@ -147,20 +145,6 @@ COMPRESS_PRECOMPILERS = (
 
 GRAPPELLI_INDEX_DASHBOARD = 'project.dashboard.Dashboard'
 GRAPPELLI_ADMIN_TITLE = 'bidasoamedia.info'
-
-# add to WSGI too
-import djcelery
-djcelery.setup_loader()
-
-BROKER_URL = 'django://'
-CELERY_IMPORTS = ('project.feeds.tasks',)
-CELERYBEAT_SCHEDULER = 'djcelery.schedulers.DatabaseScheduler'
-CELERYBEAT_SCHEDULE = {
-        'update_feeds': {
-            'task': 'project.feeds.tasks.update_feeds',
-            'schedule': timedelta(seconds=30),
-            },
-        }
 
 CATEGORY_NUMBER = 5
 

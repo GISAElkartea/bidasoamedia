@@ -30,7 +30,7 @@ class Feed(models.Model):
         if cache.has_key(self.cache_key):
             return cache.get(self.cache_key)
         else:
-            return self.update()
+            return []
             
     def update(self):
         feed = parse(self.url)
