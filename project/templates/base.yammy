@@ -116,7 +116,9 @@ html
                     a [href="{{ news.link }}"][target="_blank"] {{ news.title }}
                 {% endfor %}
                 {% endfor %}
+
             footer.flatpage
+                img#gfa [src="{% static 'imgs/gfa.png' %}"]
                 div#bidasoamedia
                     {{ preferences.ContactPreferences.text }}
                 div#gisa
