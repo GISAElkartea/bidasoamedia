@@ -27,13 +27,10 @@ class Feed(models.Model):
         return 'feed-{pk}-{url}'.format(pk=self.pk, url=self.url)
 
     def parse(self):
-        if cache.has_key(self.cache_key):
-            return cache.get(self.cache_key)
-        else:
-            return []
+        return cache.get(self.cache_key, [])
             
     def update(self):
         feed = parse(self.url)
         entries = feed.entries[:self.quantity]
-        cache.set(self.cache_key, entries, timeout=0)
+        cache.set(self.cache_key, entries, timeout=300)
         return entries
