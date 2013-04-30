@@ -41,17 +41,6 @@ feeds = {
 };
 
 
-function categories_left() {
-    $(window).resize(function() {
-        var categories = $('#categories');
-        var left = categories.width();
-        categories.css({left: '-{left}px'.replace('{left}', left)});
-        categories.show();
-    });
-    $(window).resize()
-};
-
-
 function articles_bottom() {
     var articles = $('section#articles')
     var height = window.innerHeight - articles.position().top;
@@ -61,7 +50,6 @@ function articles_bottom() {
 };
 
 $(function() {
-    categories_left();
     articles_bottom();
     feeds.get_available();
     feeds.scroll();

@@ -15,6 +15,14 @@ $darker: #383800
 @mixin gradient
     background: -moz-linear-gradient(top, $dark, $darker)
     background: -webkit-gradient(linear, center top, center bottom, from($dark), to($darker))
+@mixin transform($trans)
+    transform: $trans
+    -moz-transform: $trans
+    -webkit-transform: $trans
+@mixin transform-origin($origin)
+    transform-origin: $origin
+    -moz-transform-origin: $origin
+    -webkit-transform-origin: $origin
 
 a 
     text-decoration: none
@@ -91,20 +99,19 @@ body > header
 ul#categories
     position: fixed
     top: 9em
-    display: none
+    display: block
     margin: 0 
     padding: 0
     z-index: 2
-    -moz-transform: rotate(270deg)
-    -webkit-transform: rotate(270deg)
-    -moz-transform-origin: right top
-    -webkit-transform-origin: right top
+    @include transform(rotate(-270deg))
+    @include transform-origin(left bottom)
     li
         float: left
         list-style: none
         padding: .2em .2em .2em .5em
         width: 7em
         @include titles
+        @include transform(rotate(180deg))
 
         
 section#articles
