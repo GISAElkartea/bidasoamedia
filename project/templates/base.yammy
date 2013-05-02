@@ -59,12 +59,6 @@ html
                 a 
                     - href http://www.antxetamedia.info
                     | antxetamedia.info
-            div#rss
-                a
-                    - href {% url rss %}
-                    - alt feeds
-                    img [src="{% static 'imgs/rss.svg' %}"]
-        
         ul#categories
             {% for category in category_list %}
             li
@@ -77,6 +71,12 @@ html
         {% block articles %}{% endblock articles %}
 
         aside
+            div#rss
+                a
+                    - href {% url rss %}
+                    - alt feeds
+                    img [src="{% static 'imgs/rss.svg' %}"]
+        
             a#feedback.flatpage {% trans 'Feedback' %}
             div#feedback_drop.hiding
             div#feedback_popup.hiding
