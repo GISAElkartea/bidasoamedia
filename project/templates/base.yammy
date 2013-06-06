@@ -101,6 +101,10 @@ html
                 div.thanks.hiding {% trans 'Thank you for your feedback!' %}
                 div.close
 
+            iframe 
+                - src http://embed.bambuser.com/channel/Antxeta+Irratia
+                - width 100%
+                - frameborder 0 
 
             {% for flatpage in flatpage_list %}
             a.flatpage
