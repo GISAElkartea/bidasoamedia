@@ -55,7 +55,7 @@ html
                 img [src="{% static 'imgs/logo.svg' %}"][alt="bidasoamedia"]
                 | bidasoamedia
             div#audio
-                audio[src="http://82.194.74.21:8000/antxetairratia.mp3"]
+                audio[src="http://streaming.antxetamedia.info:8000/antxetairratia.mp3"]
                 a 
                     - href http://www.antxetamedia.info
                     | antxetamedia.info
