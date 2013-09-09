@@ -27,7 +27,7 @@ urlpatterns = patterns('',
         url(r'^admin/', include(admin.site.urls)),
         url(r'^adminfiles/', include('adminfiles.urls')),
         url(r'^markitup/', include('markitup.urls')),
-        url(r'^feedback/', include('feedback.urls')),
+        #url(r'^feedback/', include('feedback.urls')),
         url(r'^badbrowser/', include('django_badbrowser.urls')),
 )
 
