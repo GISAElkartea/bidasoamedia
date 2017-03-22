@@ -70,6 +70,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [os.path.join(BASE_DIR, 'templates')],
+        'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -81,12 +82,6 @@ TEMPLATES = [
                 'project.articles.context_processors.category_list',
                 'project.feeds.context_processors.feed_list',
                 'project.flat.context_processors.flatpage_list',
-            ],
-            'loaders': [
-                'yammy.django_loaders.YammyFileSystemLoader',
-                'yammy.django_loaders.YammyPackageLoader',
-                'django.template.loaders.app_directories.Loader',
-                'django.template.loaders.eggs.Loader',
             ],
         },
     },

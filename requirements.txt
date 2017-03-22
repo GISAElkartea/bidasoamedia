@@ -6,7 +6,6 @@ django_compressor
 django-sortable
 django-adminfiles
 markdown
-yammy
 feedparser
 purl
 
