@@ -1,0 +1,106 @@
+{% load static compress i18n %}
+
+<!doctype html/>
+
+<html>
+  <head>
+    <title>{% block title %}{% endblock title %}bidasoamedia</title>
+    <link rel="shortcut icon" href="{% static 'imgs/favicon.png' %}"/>
+    {% compress css %}
+    <link rel="stylesheet" type="text/x-sass" href="{% static 'css/main.sass' %}" />
+    <link rel=stylesheet type="text/css" href="{% static 'mediaelement/mediaelementplayer.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static 'feedback/main.css' %}" />
+    {% endcompress %}
+    {% compress js %}
+    <script type="text/javascript" src="{% static 'js/jquery.min.js' %}"></script>
+    <script type="text/javascript" src="{% static 'js/bidasoamedia.js' %}"></script>
+    <script type="text/javascript" src="{% static 'mediaelement/mediaelement-and-player.min.js' %}"></script>
+    {% endcompress %}
+
+    {% block extra_headers %}{% endblock extra_headers %}
+  </head>
+  <body>
+    <header>
+      <a href="{% url 'articles:list' %}">
+        <img src="{% static 'imgs/logo.svg' %}" alt="bidasoamedia"/>
+        bidasoamedia
+      </a>
+      <div id="audio">
+        <audio src="http://streaming.antxetamedia.info:8000/antxetairratia.mp3"/>
+        <a href="http://www.antxetamedia.info"> antxetamedia.info</a>
+      </div>
+      <ul id="categories">
+        {% for category in category_list %}
+        <li class="category-{{ category.number }}">
+          <a href="{% url 'articles:category' category.slug %}">{{ category }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </header>
+
+    {% block articles %}{% endblock articles %}
+
+    <aside>
+      <div id="rss">
+        <a href="{% url 'rss' %}" alt="feeds">
+          <img src="{% static 'imgs/rss.svg' %}" />
+        </a>
+      </div>
+
+      <iframe src="http://embed.bambuser.com/channel/Antxeta+Irratia" width="100%" frameborder="0"></iframe>
+
+      {% for flatpage in flatpage_list %}
+      <a class="flatpage" href="{{ flatpage.get_absolute_url }}">{{ flatpage }}</a>
+      {% endfor %}
+
+      <div id="feeds">
+        {% for feed in feed_list %}
+        {% for news in feed.parse %}
+        <article>
+          <img src="{{ feed.favicon }}" />
+          <a href="{{ news.link }}" target="_blank">{{ news.title }}</a>
+        </article>
+        {% endfor %}
+        {% endfor %}
+      </div>
+
+      <footer class="flatpage">
+        <img id="gfa" src="{% static 'imgs/gfa.png' %}" />
+        <div id="bidasoamedia">
+          Gurekin harremanetan jartzeko idatzi:
+          <a href="mailto:erredakzioa@bidasoamedia.info">erredakzioa@bidasoamedia.info</a>
+        </div>
+        <div id="gisa">
+          <a href="https://lagunak.gisa-elkartea.org/projects/bidasoamedia">{% trans 'Source code' %}</a>
+          <a href="http://www.gisa-elkartea.org">Gisa Elkartea</a>
+        </div>
+      </footer>
+    </aside>
+
+    <script>
+      $('audio').mediaelementplayer({
+          flashName: '{% static 'mediaelement/flashmediaelement.swf' %}',
+          features: ['playpause', 'volume']
+      });
+    </script>
+
+    <script type="text/javascript">
+      var pkBaseURL = (("https:" == document.location.protocol) ? "https://bidasoamedia.info/stats/" : "http://bidasoamedia.info/stats/");
+      document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+
+    <script type="text/javascript">
+      try {
+          var piwikTracker = Piwik.getTracker(pkBaseURL + "piwik.php", 1);
+          piwikTracker.trackPageView();
+          piwikTracker.enableLinkTracking();
+      } catch( err ) {}
+    </script>
+
+    <noscript>
+      <p>
+        <img src="http://bidasoamedia.info/stats/piwik.php?idsite=1" style="border:0" alt="" />
+      </p>
+    </noscript>
+  </body>
+</html>

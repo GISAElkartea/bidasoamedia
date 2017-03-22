@@ -4,9 +4,10 @@
 {% block title %}{{ flatpage }} | {% endblock title %}
 
 {% block articles %}
-section#articles
-    article.detail
-        h1 {{ flatpage }}
-
-        {{ flatpage.text }}
+<section id="articles">
+  <article class="detail">
+    <h1>{{ flatpage }}</h1>
+    {{ flatpage.text }}
+  </article>
+</section>
 {% endblock articles %}

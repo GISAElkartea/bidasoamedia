@@ -1,0 +1,22 @@
+{% extends base %}
+{% load thumbnail %}
+
+{% block title %}{{ article }} | {% endblock title %}
+
+{% block articles %}
+<section id="articles">
+  <article class="detail">
+    <h1>{{ article }}</h1>
+
+    <p class="info">
+      <time>{{ article.pub_date }}</time>
+
+      {% for category in article.categories.select_related %}
+      <a class="category" href="{% url 'articles:category' category.slug %}">{{ category }}</a>
+      {% endfor %}
+    </p>
+
+    {{ article.body }}
+  </article>
+</section>
+{% endblock articles %}

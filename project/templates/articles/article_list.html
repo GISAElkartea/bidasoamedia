@@ -1,0 +1,32 @@
+{% extends base %}
+{% load thumbnail i18n %}
+
+{% block title %}{% if category %}{{ category|capfirst }} | {% endif %}{% trans 'Articles' %} | {% endblock title %}
+
+{% block articles %}
+<section id="articles" class="{% if category %}category-{{ category.number }}{% endif %}">
+  {% for article in article_list %}
+  <article class="list">
+    <a href="{% url 'articles:detail' article.slug %}">
+      {% thumbnail article.image "200x200" crop="center" as image %}
+      <img src="{{ image.url }}" />
+      {% endthumbnail %}
+
+      <div id="description">
+        <header>
+          <h2>{{ article }}</h2>
+        </header>
+
+        {% if article.description %}
+        {{ article.description }}
+        {% else %}
+        {{ article.body|truncatewords_html:50 }}
+        {% endif %}
+
+        <time>{{ article.pub_date }}</time>
+      </div>
+    </a>
+  </article>
+  {% endfor %}
+</section>
+{% endblock articles %}
