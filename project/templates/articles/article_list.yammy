@@ -1,5 +1,5 @@
 {% extends base %}
-{% load thumbnail infinite_pagination i18n %}
+{% load thumbnail i18n %}
 
 {% block title %}{% if category %}{{ category|capfirst }} | {% endif %}{% trans 'Articles' %} | {% endblock title %}
 
@@ -9,7 +9,7 @@ section#articles
 
     {% for article in article_list %}
     article.list
-        a [href="{% url articles:detail article.slug %}"]
+        a [href="{% url 'articles:detail' article.slug %}"]
             {% thumbnail article.image "200x200" crop="center" as image %}
             img [src="{{ image.url }}"]
             {% endthumbnail %}
@@ -24,10 +24,8 @@ section#articles
                 {% else %}
                 {{ article.body|truncatewords_html:50 }}
                 {% endif %}
-                
+
                 time {{ article.pub_date }}
     {% endfor %}
-
-    {% paginate %}
 
 {% endblock articles %}

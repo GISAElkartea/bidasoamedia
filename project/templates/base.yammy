@@ -51,7 +51,7 @@ html
     body
         header
             a
-                - href {% url articles:list %}
+                - href {% url 'articles:list' %}
                 img [src="{% static 'imgs/logo.svg' %}"][alt="bidasoamedia"]
                 | bidasoamedia
             div#audio
@@ -64,7 +64,7 @@ html
             li
                 - class category-{{ category.number }}
                 a
-                    - href {% url articles:category category.slug %}
+                    - href {% url 'articles:category' category.slug %}
                     | {{ category }}
             {% endfor %}
 
@@ -73,7 +73,7 @@ html
         aside
             div#rss
                 a
-                    - href {% url rss %}
+                    - href {% url 'rss' %}
                     - alt feeds
                     img [src="{% static 'imgs/rss.svg' %}"]
         
@@ -81,7 +81,7 @@ html
             a#feedback.flatpage {% trans 'Feedback' %}
             div#feedback_drop.hiding
             div#feedback_popup.hiding
-                form.feedback [action="{% url feedback request.path %}"][method=POST]
+                form.feedback [action="{% url 'feedback' request.path %}"][method=POST]
                     {% csrf_token %}
 
                     div.email.error
@@ -126,7 +126,10 @@ html
             footer.flatpage
                 img#gfa [src="{% static 'imgs/gfa.png' %}"]
                 div#bidasoamedia
-                    {{ preferences.ContactPreferences.text }}
+                    Gurekin harremanetan jartzeko idatzi:
+                    a
+                        - href mailto:erredakzioa@bidasoamedia.info
+                        | erredakzioa@bidasoamedia.info
                 div#gisa
                     a
                         - href https://lagunak.gisa-elkartea.org/projects/bidasoamedia

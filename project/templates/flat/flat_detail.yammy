@@ -7,6 +7,6 @@
 section#articles
     article.detail
         h1 {{ flatpage }}
-        
+
         {{ flatpage.text }}
 {% endblock articles %}

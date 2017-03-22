@@ -7,13 +7,13 @@
 section#articles
     article.detail
         h1 {{ article }}
-        
+
         p.info
             time {{ article.pub_date }}
 
             {% for category in article.categories.select_related %}
             a.category
-                - href {% url articles:category category.slug %}
+                - href {% url 'articles:category' category.slug %}
                 | {{ category }}
             {% endfor %}
 
