@@ -32,7 +32,7 @@ class Category(models.Model):
 
 class ArticleManager(models.Manager):
     def published(self):
-        q = self.get_query_set()
+        q = self.get_queryset()
         return q.filter(pub_date__lte=now())
 
 
@@ -44,7 +44,7 @@ class Article(models.Model):
         verbose_name_plural = _('Articles')
 
     title = models.CharField(max_length=100, verbose_name=_('title'))
-    description = MarkupField(blank=True, verbose_name=_('description'), 
+    description = MarkupField(blank=True, verbose_name=_('description'),
             help_text=_('populated from body if not given'))
     body = MarkupField(verbose_name=_('body'))
     image = ImageField(blank=True, upload_to='images',
@@ -52,7 +52,7 @@ class Article(models.Model):
 
     pub_date = models.DateTimeField(default=now,
             verbose_name=_('publication date'))
-    categories = models.ManyToManyField(Category, blank=True, null=True,
+    categories = models.ManyToManyField(Category, blank=True,
             verbose_name=_('categories'))
     slug = AutoSlugField(populate_from='title', unique=True)
 

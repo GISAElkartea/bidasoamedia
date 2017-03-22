@@ -3,7 +3,6 @@ from django.utils.translation import ugettext as _
 
 from preferences.models import Preferences
 from markitup.fields import MarkupField
-from sortable.models import Sortable
 from autoslug import AutoSlugField
 
 
@@ -17,8 +16,8 @@ class ContactPreferences(Preferences):
     email = models.EmailField(verbose_name=_('email'))
 
 
-class Flatpage(Sortable):
-    class Meta(Sortable.Meta):
+class Flatpage(models.Model):
+    class Meta:
         verbose_name = _('flatpage')
         verbose_name_plural = _('flatpages')
 

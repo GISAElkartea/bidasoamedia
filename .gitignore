@@ -10,3 +10,4 @@ celerybeat.pid
 lib
 lib64
 share
+db.sqlite3

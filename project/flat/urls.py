@@ -1,8 +1,8 @@
-from django.conf.urls.defaults import patterns, url
+from django.conf.urls import url
 
 from project.flat.views import FlatpageDetail
 
 
-urlpatterns = patterns('',
+urlpatterns = [
         url('^flatpage/(?P<slug>(\w|\d|-)+)/$', FlatpageDetail.as_view(), name='detail'),
-        )
+]

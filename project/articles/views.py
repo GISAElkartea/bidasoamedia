@@ -1,15 +1,12 @@
 from django.views.generic import ListView, DetailView
 from django.shortcuts import get_object_or_404
 
-from infinite_pagination import InfinitePaginator
-
 from project.articles.models import Article, Category
 
 
 class ArticleList(ListView):
     allow_empty = True
     paginate_by = 10
-    paginator_class = InfinitePaginator
     template_name = 'articles/article_list.yammy'
     context_object_name = 'article_list'
 
@@ -28,7 +25,7 @@ class ArticleCategory(ArticleList):
         context['category'] = self.category
         return context
 
-        
+
 class ArticleDetail(DetailView):
     template_name = 'articles/article_detail.yammy'
     queryset = Article.objects.published()
