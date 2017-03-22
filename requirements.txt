@@ -1,0 +1,26 @@
+django
+django-autoslug
+django-stdimage
+django-grappelli
+django-feedback
+django-markitup
+django_compressor
+django-infinite-pagination
+markdown
+yammy
+feedparser
+purl
+
+sorl-thumbnail
+djangoembed
+flickrapi
+gdata
+simplejson
+httplib2
+pillow
+BeautifulSoup
+python-memcached
+pycrypto
+
+-e git+https://github.com/carljm/django-adminfiles.git#egg=django-adminfiles
+-e git+https://github.com/praekelt/django-preferences.git#egg=django-preferences

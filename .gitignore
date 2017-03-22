@@ -1,12 +1,12 @@
-.installed.cfg
-.mr.developer.cfg
+pyvenv.cfg
 bin
 *.pyc
 project/db.sqlite
 src
-develop-eggs
-parts
 .sass-cache
 project/static
 *.mo
 celerybeat.pid
+lib
+lib64
+share
