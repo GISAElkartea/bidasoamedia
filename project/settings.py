@@ -166,11 +166,10 @@ MARKITUP_SKIN = 'markitup/skins/markitup'
 MARKITUP_AUTO_PREVIEW = True
 OEMBED_DEFAULT_PARSE_HTML = False
 
-SASS = os.path.join(os.path.dirname(BASE_DIR), 'bin/sass')
 COMPRESS_OUTPUT_DIR = 'cache'
-COMPRESS_PRECOMPILERS = (
-                ('text/x-sass', '%s {infile} {outfile}' % SASS),
-                )
+COMPRESS_PRECOMPILERS = [
+        ('text/x-sass', 'django_libsass.SassCompiler'),
+]
 
 GRAPPELLI_INDEX_DASHBOARD = 'project.dashboard.Dashboard'
 GRAPPELLI_ADMIN_TITLE = 'bidasoamedia.info'
