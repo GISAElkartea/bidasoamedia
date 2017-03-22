@@ -2,12 +2,7 @@ from django.contrib import admin
 
 from preferences.admin import PreferencesAdmin
 
-from project.flat.models import ContactPreferences, Flatpage
-
-
-class ContactPreferencesAdmin(PreferencesAdmin, admin.ModelAdmin):
-    pass
-admin.site.register(ContactPreferences, ContactPreferencesAdmin)
+from project.flat.models import Flatpage
 
 
 class FlatpageAdmin(admin.ModelAdmin):

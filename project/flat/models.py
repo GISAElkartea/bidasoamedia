@@ -1,19 +1,8 @@
 from django.db import models
 from django.utils.translation import ugettext as _
 
-from preferences.models import Preferences
 from markitup.fields import MarkupField
 from autoslug import AutoSlugField
-
-
-class ContactPreferences(Preferences):
-    class Meta:
-        verbose_name = _('Contact Preferences')
-        verbose_name_plural = _('Contact Preferences')
-
-    __module__ = 'preferences.models'
-    text = MarkupField(verbose_name=_('text'))
-    email = models.EmailField(verbose_name=_('email'))
 
 
 class Flatpage(models.Model):

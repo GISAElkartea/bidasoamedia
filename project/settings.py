@@ -47,7 +47,6 @@ INSTALLED_APPS = [
     'markitup',
     'compressor',
     'sorl.thumbnail',
-    'preferences',
 
     'project',
     'project.articles',
@@ -78,7 +77,6 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
-                'preferences.context_processors.preferences_cp',
                 'project.context_processors.ajax_template',
                 'project.articles.context_processors.category_list',
                 'project.feeds.context_processors.feed_list',

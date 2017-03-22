@@ -19,5 +19,3 @@ pillow
 beautifulsoup4
 python-memcached
 pycrypto
-
--e git+https://github.com/praekelt/django-preferences.git#egg=django-preferences
