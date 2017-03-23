@@ -12,3 +12,5 @@ lib64
 share
 db.sqlite3
 static
+production.py
+secret_key.py
