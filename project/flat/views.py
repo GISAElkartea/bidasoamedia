@@ -5,5 +5,5 @@ from project.flat.models import Flatpage
 
 class FlatpageDetail(DetailView):
     model = Flatpage
-    template_name = 'flat/flat_detail.yammy'
+    template_name = 'flat/flat_detail.html'
     context_object_name = 'flatpage'

@@ -7,7 +7,7 @@ from project.articles.models import Article, Category
 class ArticleList(ListView):
     allow_empty = True
     paginate_by = 10
-    template_name = 'articles/article_list.yammy'
+    template_name = 'articles/article_list.html'
     context_object_name = 'article_list'
 
     def get_queryset(self, *args, **kwargs):
@@ -27,7 +27,7 @@ class ArticleCategory(ArticleList):
 
 
 class ArticleDetail(DetailView):
-    template_name = 'articles/article_detail.yammy'
+    template_name = 'articles/article_detail.html'
     queryset = Article.objects.published()
 
     def get_queryset(self, *args, **kwargs):
