@@ -1,7 +1,5 @@
 from django.contrib import admin
 
-from preferences.admin import PreferencesAdmin
-
 from project.flat.models import Flatpage
 
 

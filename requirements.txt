@@ -9,14 +9,8 @@ django_libsass
 markdown
 feedparser
 purl
+django-markitup
 
-flickrapi
-gdata
-simplejson
-httplib2
-pillow
-beautifulsoup4
 python-memcached
-pycrypto
 
 -e git+https://github.com/mariocesar/sorl-thumbnail.git#egg=sorl-thumbnail
