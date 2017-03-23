@@ -3,7 +3,6 @@ django-autoslug
 django-stdimage
 django-grappelli
 django_compressor
-django-sortable
 django-adminfiles
 django_libsass
 markdown
