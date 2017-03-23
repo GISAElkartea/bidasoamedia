@@ -10,7 +10,6 @@ markdown
 feedparser
 purl
 
-sorl-thumbnail
 flickrapi
 gdata
 simplejson
@@ -19,3 +18,5 @@ pillow
 beautifulsoup4
 python-memcached
 pycrypto
+
+-e git+https://github.com/mariocesar/sorl-thumbnail.git#egg=sorl-thumbnail
