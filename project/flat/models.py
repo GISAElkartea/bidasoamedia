@@ -15,7 +15,7 @@ class Flatpage(models.Model):
 
     slug = AutoSlugField(populate_from='title', unique=True)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
 
     @models.permalink

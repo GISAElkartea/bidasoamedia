@@ -12,10 +12,10 @@ class Feed(models.Model):
         verbose_name_plural = _('Feeds')
 
     url = models.URLField(verbose_name=_('url'))
-    quantity = models.PositiveSmallIntegerField(default=5, 
+    quantity = models.PositiveSmallIntegerField(default=5,
             verbose_name=_('quantity'))
 
-    def __unicode__(self):
+    def __str__(self):
         return self.url
 
     @property
@@ -28,7 +28,7 @@ class Feed(models.Model):
 
     def parse(self):
         return cache.get(self.cache_key, [])
-            
+
     def update(self):
         feed = parse(self.url)
         entries = feed.entries[:self.quantity]

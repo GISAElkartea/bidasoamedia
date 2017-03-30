@@ -17,7 +17,7 @@ class Category(models.Model):
 
     slug = AutoSlugField(populate_from='name', unique=True)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.name
 
     @models.permalink
@@ -56,7 +56,7 @@ class Article(models.Model):
             verbose_name=_('categories'))
     slug = AutoSlugField(populate_from='title', unique=True)
 
-    def __unicode__(self):
+    def __str__(self):
         return self.title
 
     @models.permalink
